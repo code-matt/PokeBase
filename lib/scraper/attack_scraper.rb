@@ -9,27 +9,27 @@ class AttackScraper
     parsed_page = Nokogiri::HTML(open(url))
     links = parsed_page.css("a.ent-name")
 
-    move_links = parsed_page.css("a")
-    all_move_links = []
+    links = parsed_page.css("a")
+    move_links = []
 
-    move_links.each do |link|
+    links.each do |link|
       puts link.attributes['href'].value
       directory = link.attributes['href'].value
       arr = directory.split('/')
-      all_move_links << directory if arr[1] == 'move' && arr.length > 1
+      move_links << directory if arr[1] == 'move' && arr.length > 1
     end
-    all_move_links.shift
-    all_move_links.compact!
-    all_move_links.uniq!
+    move_links.shift
+    move_links.compact!
+    move_links.uniq!
 
     all_attacks = []
-    all_move_links.each do |move|
-      all_attacks << scrape_attack(move)
+    move_links.each do |move|
+      all_attacks << scrape_attacks(move)
     end
     all_attacks
   end
 
-  def scrape_attack(move)
+  def scrape_attacks(move)
     return {} if move == "/move/struggle"
     puts move
     move_hash = Hash.new(0)
