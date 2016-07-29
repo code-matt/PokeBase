@@ -4,69 +4,98 @@ class AttackScraper
   require 'csv'
   require 'pry'
 
-  def self.scrape_attack_data
+  def scrape_attack_links
     url = "https://pokemondb.net/spinoff/go/pokedex"
     parsed_page = Nokogiri::HTML(open(url))
     links = parsed_page.css("a.ent-name")
-    types = parsed_page.css("td.cell-icon")
-    stats = parsed_page.css("td.num")
 
     move_links = parsed_page.css("a")
     all_move_links = []
 
     move_links.each do |link|
       puts link.attributes['href'].value
-      url = link.attributes['href'].value
-      url_array = url.split('/')
-      all_move_links << url_array[2] if url_array[1] == 'move'
+      directory = link.attributes['href'].value
+      arr = directory.split('/')
+      all_move_links << directory if arr[1] == 'move' && arr.length > 1
     end
-    all_move_links.compact!.uniq!
+    all_move_links.shift
+    all_move_links.compact!
+    all_move_links.uniq!
 
-    all_info = []
+    all_attacks = []
+    all_move_links.each do |move|
+      all_attacks << scrape_attack(move)
+    end
+    all_attacks
+  end
 
-    links.each_with_index do |link, index|
-      puts link.attributes['href'].value
-      url = link.attributes['href'].value
-      pokemon_name = url.split('/')[2]
-      pokemon_types = []
-      types[index].children.each do |type|
-        pokemon_types << type.text unless type.text == ""
+  def scrape_attack(move)
+    return {} if move == "/move/struggle"
+    puts move
+    move_hash = Hash.new(0)
+    if move != "/move"
+      url = "https://pokemondb.net"
+      parsed_page = Nokogiri::HTML(open(url + move))
+      puts "Scraping #{url + move}"
+
+      move_name = parsed_page.css("h1").first.text.split('(')[0].strip
+      move_hash[:name] = move_name
+
+      move_hash[:valid_pokemons] = parse_pokemon_with_attacks(parsed_page.css("div.infocard-list"))
+    end
+    move_hash
+  end
+
+  def parse_pokemon_with_attacks(item)
+    pokemons = []
+    str_arr = item.css("div.infocard-list").css("span.infocard-data")
+    valid_pokemons = []
+    str_arr.each_with_index do |str,index|
+      poke_id = extract_number(str)
+      if poke_id < 151
+        valid_pokemons << extract_pokemon_name(str)
       end
-
-      all_info << {
-        number: index + 1,
-        name: pokemon_name.capitalize,
-        main_type: pokemon_types[0],
-        secondary_type: pokemon_types[1],
-        stamina: stats[index * 7 + 1],
-        attack: stats[index * 7 + 2],
-        defense: stats[index * 7 + 3],
-        capture_rate: stats[index * 7 + 4],
-        flee_rate: stats[index * 7 + 5],
-        candy: stats[index * 7 + 6]
-      }
     end
+    valid_pokemons
+  end
 
-    all_info
+  def extract_number(str)
+    val = nil
+    re1='.*?'	# Non-greedy match on filler
+    re2='(\\d+)'	# Integer Number 1
+
+    re=(re1+re2)
+    m=Regexp.new(re,Regexp::IGNORECASE);
+    if m.match(str)
+        int1=m.match(str)[1];
+        val = int1
+    end
+    val.to_i
+  end
+
+  def extract_pokemon_name(txt)
+    val = nil
+    re1='((?:[a-z][a-z]+))'	# Word 1
+
+    re=(re1)
+    m=Regexp.new(re,Regexp::IGNORECASE);
+    if m.match(txt)
+        word1=m.match(txt)[1];
+        val = word1
+    end
+    val
   end
 
   def self.fill_csv
-    counter = 0
     puts "Scraping pokemon attack links"
-    pokemon_links = AttackScraper.scrape_attack_data
+    scraper = AttackScraper.new
+    attacks = scraper.scrape_attack_links
 
-    pokemon_links.each do |stuff|
-      CSV.open("attack_data.csv", "ab") do |csv|
-        row = [stuff[:number], stuff[:name], stuff[:main_type]]
-        row += [stuff[:secondary_type]] unless stuff[:secondary_type].nil?
-        row += [stuff[:stamina], stuff[:attack], stuff[:defense]]
-        row += [stuff[:capture_rate], stuff[:flee_rate], stuff[:candy]]
-        csv << row
-        counter += 1
+    CSV.open('attack_data.csv', 'w') do |csv_object|
+      attacks.each do |attack|
+        csv_object << [attack]
       end
     end
-    pokemon_links.clear
-    puts "attack_data.csv saved with #{counter} lines"
   end
 end
 

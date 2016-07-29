@@ -1,151 +1,124 @@
-1,Bulbasaur,Grass,Poison,90,126,126,16%,10%,25
-2,Ivysaur,Grass,Poison,120,156,158,8%,7%,100
-3,Venusaur,Grass,Poison,160,198,200,4%,5%,—
-4,Charmander,Fire,78,128,108,16%,10%,25
-5,Charmeleon,Fire,116,160,140,8%,7%,100
-6,Charizard,Fire,Flying,156,212,182,4%,5%,—
-7,Squirtle,Water,88,112,142,16%,10%,25
-8,Wartortle,Water,118,144,176,8%,7%,100
-9,Blastoise,Water,158,186,222,4%,5%,—
-10,Caterpie,Bug,90,62,66,40%,20%,12
-11,Metapod,Bug,100,56,86,20%,9%,50
-12,Butterfree,Bug,Flying,120,144,144,10%,6%,—
-13,Weedle,Bug,Poison,80,68,64,40%,20%,12
-14,Kakuna,Bug,Poison,90,62,82,20%,9%,50
-15,Beedrill,Bug,Poison,130,144,130,10%,6%,—
-16,Pidgey,Normal,Flying,80,94,90,40%,20%,12
-17,Pidgeotto,Normal,Flying,126,126,122,20%,9%,50
-18,Pidgeot,Normal,Flying,166,170,166,10%,6%,—
-19,Rattata,Normal,60,92,86,40%,20%,25
-20,Raticate,Normal,110,146,150,16%,7%,—
-21,Spearow,Normal,Flying,80,102,78,40%,15%,50
-22,Fearow,Normal,Flying,130,168,146,16%,7%,—
-23,Ekans,Poison,70,112,112,40%,15%,50
-24,Arbok,Poison,120,166,166,16%,7%,—
-25,Pikachu,Electric,70,124,108,16%,10%,50
-26,Raichu,Electric,120,200,154,8%,6%,—
-27,Sandshrew,Ground,100,90,114,40%,10%,50
-28,Sandslash,Ground,150,150,172,16%,6%,—
-29,Nidoran-f,Poison,110,100,104,40%,15%,25
-30,Nidorina,Poison,140,132,136,20%,7%,100
-31,Nidoqueen,Poison,Ground,180,184,190,10%,5%,—
-32,Nidoran-m,Poison,92,110,94,40%,15%,25
-33,Nidorino,Poison,122,142,128,20%,7%,100
-34,Nidoking,Poison,Ground,162,204,170,10%,5%,—
-35,Clefairy,Fairy,140,116,124,24%,10%,50
-36,Clefable,Fairy,190,178,178,8%,6%,—
-37,Vulpix,Fire,76,106,118,24%,10%,50
-38,Ninetales,Fire,146,176,194,8%,6%,—
-39,Jigglypuff,Normal,Fairy,230,98,54,40%,10%,50
-40,Wigglytuff,Normal,Fairy,280,168,108,16%,6%,—
-41,Zubat,Poison,Flying,80,88,90,40%,20%,50
-42,Golbat,Poison,Flying,150,164,164,16%,7%,—
-43,Oddish,Grass,Poison,90,134,130,48%,15%,25
-44,Gloom,Grass,Poison,120,162,158,24%,7%,100
-45,Vileplume,Grass,Poison,150,202,190,12%,5%,—
-46,Paras,Bug,Grass,70,122,120,32%,15%,50
-47,Parasect,Bug,Grass,120,162,170,16%,7%,—
-48,Venonat,Bug,Poison,120,108,118,40%,15%,50
-49,Venomoth,Bug,Poison,140,172,154,16%,7%,—
-50,Diglett,Ground,20,108,86,40%,10%,50
-51,Dugtrio,Ground,70,148,140,16%,6%,—
-52,Meowth,Normal,80,104,94,40%,15%,50
-53,Persian,Normal,130,156,146,16%,7%,—
-54,Psyduck,Water,100,132,112,40%,10%,50
-55,Golduck,Water,160,194,176,16%,6%,—
-56,Mankey,Fighting,80,122,96,40%,10%,50
-57,Primeape,Fighting,130,178,150,16%,6%,—
-58,Growlithe,Fire,110,156,110,24%,10%,50
-59,Arcanine,Fire,180,230,180,8%,6%,—
-60,Poliwag,Water,80,108,98,40%,15%,25
-61,Poliwhirl,Water,130,132,132,20%,7%,100
-62,Poliwrath,Water,Fighting,180,180,202,10%,5%,—
-63,Abra,Psychic,50,110,76,40%,99%,25
-64,Kadabra,Psychic,80,150,112,20%,7%,100
-65,Alakazam,Psychic,110,186,152,10%,5%,—
-66,Machop,Fighting,140,118,96,40%,10%,25
-67,Machoke,Fighting,160,154,144,20%,7%,100
-68,Machamp,Fighting,180,198,180,10%,5%,—
-69,Bellsprout,Grass,Poison,100,158,78,40%,15%,25
-70,Weepinbell,Grass,Poison,130,190,110,20%,7%,100
-71,Victreebel,Grass,Poison,160,222,152,10%,5%,—
-72,Tentacool,Water,Poison,80,106,136,40%,15%,50
-73,Tentacruel,Water,Poison,160,170,196,16%,7%,—
-74,Geodude,Rock,Ground,80,106,118,40%,10%,25
-75,Graveler,Rock,Ground,110,142,156,20%,7%,100
-76,Golem,Rock,Ground,160,176,198,10%,5%,—
-77,Ponyta,Fire,100,168,138,32%,10%,50
-78,Rapidash,Fire,130,200,170,12%,6%,—
-79,Slowpoke,Water,Psychic,180,110,110,40%,10%,50
-80,Slowbro,Water,Psychic,190,184,198,16%,6%,—
-81,Magnemite,Electric,Steel,50,128,138,40%,10%,50
-82,Magneton,Electric,Steel,100,186,180,16%,6%,—
-83,Farfetchd,Normal,Flying,104,138,132,24%,9%,—
-84,Doduo,Normal,Flying,70,126,96,40%,10%,50
-85,Dodrio,Normal,Flying,120,182,150,16%,6%,—
-86,Seel,Water,130,104,138,40%,9%,50
-87,Dewgong,Water,Ice,180,156,192,16%,6%,—
-88,Grimer,Poison,160,124,110,40%,10%,50
-89,Muk,Poison,210,180,188,16%,6%,—
-90,Shellder,Water,60,120,112,40%,10%,50
-91,Cloyster,Water,Ice,100,196,196,16%,6%,—
-92,Gastly,Ghost,Poison,60,136,82,32%,10%,25
-93,Haunter,Ghost,Poison,90,172,118,16%,7%,100
-94,Gengar,Ghost,Poison,120,204,156,8%,5%,—
-95,Onix,Rock,Ground,70,90,186,16%,9%,—
-96,Drowzee,Psychic,120,104,140,40%,10%,50
-97,Hypno,Psychic,170,162,196,16%,6%,—
-98,Krabby,Water,60,116,110,40%,15%,50
-99,Kingler,Water,110,178,168,16%,7%,—
-100,Voltorb,Electric,80,102,124,40%,10%,50
-101,Electrode,Electric,120,150,174,16%,6%,—
-102,Exeggcute,Grass,Psychic,120,110,132,40%,10%,50
-103,Exeggutor,Grass,Psychic,190,232,164,16%,6%,—
-104,Cubone,Ground,100,102,150,32%,10%,50
-105,Marowak,Ground,120,140,202,12%,6%,—
-106,Hitmonlee,Fighting,100,148,172,16%,9%,—
-107,Hitmonchan,Fighting,100,138,204,16%,9%,—
-108,Lickitung,Normal,180,126,160,16%,9%,—
-109,Koffing,Poison,80,136,142,40%,10%,50
-110,Weezing,Poison,130,190,198,16%,6%,—
-111,Rhyhorn,Ground,Rock,160,110,116,40%,10%,50
-112,Rhydon,Ground,Rock,210,166,160,16%,6%,—
-113,Chansey,Normal,500,40,60,16%,9%,—
-114,Tangela,Grass,130,164,152,32%,9%,—
-115,Kangaskhan,Normal,210,142,178,16%,9%,—
-116,Horsea,Water,60,122,100,40%,10%,50
-117,Seadra,Water,110,176,150,16%,6%,—
-118,Goldeen,Water,90,112,126,40%,15%,50
-119,Seaking,Water,160,172,160,16%,7%,—
-120,Staryu,Water,60,130,128,40%,15%,50
-121,Starmie,Water,Psychic,120,194,192,16%,6%,—
-122,Mr-mime,Psychic,Fairy,80,154,196,24%,9%,—
-123,Scyther,Bug,Flying,140,176,180,24%,9%,—
-124,Jynx,Ice,Psychic,130,172,134,24%,9%,—
-125,Electabuzz,Electric,130,198,160,24%,9%,—
-126,Magmar,Fire,130,214,158,24%,9%,—
-127,Pinsir,Bug,130,184,186,24%,9%,—
-128,Tauros,Normal,150,148,184,24%,9%,—
-129,Magikarp,Water,40,42,84,56%,15%,400
-130,Gyarados,Water,Flying,190,192,196,8%,7%,—
-131,Lapras,Water,Ice,260,186,190,16%,9%,—
-132,Ditto,Normal,96,110,110,16%,10%,—
-133,Eevee,Normal,110,114,128,32%,10%,25
-134,Vaporeon,Water,260,186,168,12%,6%,—
-135,Jolteon,Electric,130,192,174,12%,6%,—
-136,Flareon,Fire,130,238,178,12%,6%,—
-137,Porygon,Normal,130,156,158,32%,9%,—
-138,Omanyte,Rock,Water,70,132,160,32%,9%,50
-139,Omastar,Rock,Water,140,180,202,12%,5%,—
-140,Kabuto,Rock,Water,60,148,142,32%,9%,50
-141,Kabutops,Rock,Water,120,190,190,12%,5%,—
-142,Aerodactyl,Rock,Flying,160,182,162,16%,9%,—
-143,Snorlax,Normal,320,180,180,16%,9%,—
-144,Articuno,Ice,Flying,180,198,242,—,10%,—
-145,Zapdos,Electric,Flying,180,232,194,—,10%,—
-146,Moltres,Fire,Flying,180,242,194,—,10%,—
-147,Dratini,Dragon,82,128,110,32%,9%,25
-148,Dragonair,Dragon,122,170,152,8%,6%,100
-149,Dragonite,Dragon,Flying,182,250,212,4%,5%,—
-150,Mewtwo,Psychic,212,284,202,—,10%,—
-151,Mew,Psychic,200,220,220,—,10%,—
+"{:name=>""Tackle"", :valid_pokemons=>[""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Caterpie"", ""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Rattata"", ""Raticate"", ""Venonat"", ""Venomoth"", ""Geodude"", ""Graveler"", ""Golem"", ""Ponyta"", ""Slowpoke"", ""Slowbro"", ""Magnemite"", ""Magneton"", ""Shellder"", ""Onix"", ""Voltorb"", ""Electrode"", ""Koffing"", ""Weezing"", ""Staryu"", ""Tauros"", ""Magikarp"", ""Eevee"", ""Vaporeon"", ""Jolteon"", ""Flareon"", ""Porygon"", ""Snorlax"", ""Porygon""]}"
+"{:name=>""Vine Whip"", :valid_pokemons=>[""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Venusaur"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Tangela""]}"
+"{:name=>""Power Whip"", :valid_pokemons=>[""Lickitung"", ""Tangela"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Bellsprout"", ""Weepinbell"", ""Victreebel""]}"
+"{:name=>""Seed Bomb"", :valid_pokemons=>[""Bulbasaur"", ""Exeggutor"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Ekans"", ""Arbok"", ""Oddish"", ""Gloom"", ""Vileplume"", ""Paras"", ""Parasect"", ""Meowth"", ""Persian"", ""Mankey"", ""Primeape"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Exeggcute"", ""Exeggutor"", ""Tangela"", ""Snorlax""]}"
+"{:name=>""Sludge Bomb"", :valid_pokemons=>[""Grimer"", ""Muk"", ""Koffing"", ""Weezing"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Beedrill"", ""Ekans"", ""Arbok"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Zubat"", ""Golbat"", ""Oddish"", ""Gloom"", ""Vileplume"", ""Paras"", ""Parasect"", ""Venonat"", ""Venomoth"", ""Diglett"", ""Dugtrio"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Tentacool"", ""Tentacruel"", ""Grimer"", ""Muk"", ""Gastly"", ""Haunter"", ""Gengar"", ""Exeggcute"", ""Exeggutor"", ""Koffing"", ""Weezing"", ""Tangela""]}"
+"{:name=>""Razor Leaf"", :valid_pokemons=>[""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Oddish"", ""Gloom"", ""Vileplume""]}"
+"{:name=>""Solar Beam"", :valid_pokemons=>[""Ivysaur"", ""Venusaur"", ""Vileplume"", ""Exeggcute"", ""Moltres"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Charizard"", ""Butterfree"", ""Beedrill"", ""Clefairy"", ""Clefable"", ""Ninetales"", ""Jigglypuff"", ""Wigglytuff"", ""Oddish"", ""Gloom"", ""Vileplume"", ""Paras"", ""Parasect"", ""Venonat"", ""Venomoth"", ""Arcanine"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Ponyta"", ""Rapidash"", ""Exeggcute"", ""Exeggutor"", ""Lickitung"", ""Chansey"", ""Tangela"", ""Kangaskhan"", ""Mr"", ""Tauros"", ""Porygon"", ""Snorlax"", ""Moltres"", ""Mewtwo"", ""Porygon""]}"
+"{:name=>""Petal Blizzard"", :valid_pokemons=>[""Venusaur"", ""Gloom"", ""Vileplume""]}"
+"{:name=>""Ember"", :valid_pokemons=>[""Charmander"", ""Charmeleon"", ""Charmeleon"", ""Charizard"", ""Charizard"", ""Vulpix"", ""Growlithe"", ""Ponyta"", ""Rapidash"", ""Rapidash"", ""Magmar"", ""Magmar"", ""Flareon"", ""Moltres""]}"
+"{:name=>""Scratch"", :valid_pokemons=>[""Charmander"", ""Charmeleon"", ""Charizard"", ""Sandshrew"", ""Sandslash"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Paras"", ""Parasect"", ""Diglett"", ""Dugtrio"", ""Meowth"", ""Persian"", ""Psyduck"", ""Golduck"", ""Mankey"", ""Primeape"", ""Kabuto"", ""Kabutops""]}"
+"{:name=>""Flame Burst"", :valid_pokemons=>[""Charmander"", ""Charmeleon"", ""Charizard"", ""Vulpix"", ""Growlithe"", ""Magmar""]}"
+"{:name=>""Flame Charge"", :valid_pokemons=>[""Ponyta"", ""Rapidash"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Vulpix"", ""Ninetales"", ""Growlithe"", ""Arcanine"", ""Ponyta"", ""Rapidash"", ""Magmar"", ""Flareon"", ""Moltres""]}"
+"{:name=>""Flamethrower"", :valid_pokemons=>[""Charmander"", ""Charmeleon"", ""Charizard"", ""Vulpix"", ""Ninetales"", ""Growlithe"", ""Magmar"", ""Moltres"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Nidoqueen"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Vulpix"", ""Ninetales"", ""Jigglypuff"", ""Wigglytuff"", ""Growlithe"", ""Arcanine"", ""Machop"", ""Machoke"", ""Machamp"", ""Geodude"", ""Graveler"", ""Golem"", ""Ponyta"", ""Rapidash"", ""Slowpoke"", ""Slowbro"", ""Grimer"", ""Muk"", ""Cubone"", ""Marowak"", ""Lickitung"", ""Koffing"", ""Weezing"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Magmar"", ""Tauros"", ""Gyarados"", ""Flareon"", ""Aerodactyl"", ""Snorlax"", ""Moltres"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Mewtwo""]}"
+"{:name=>""Fire Punch"", :valid_pokemons=>[""Hitmonchan"", ""Magmar"", ""Dragonite"", ""Abra"", ""Kadabra"", ""Alakazam"", ""Machop"", ""Machoke"", ""Machamp"", ""Gastly"", ""Haunter"", ""Gengar"", ""Drowzee"", ""Hypno"", ""Electabuzz"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Nidoqueen"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Mankey"", ""Primeape"", ""Abra"", ""Kadabra"", ""Alakazam"", ""Machop"", ""Machoke"", ""Machamp"", ""Geodude"", ""Graveler"", ""Golem"", ""Grimer"", ""Muk"", ""Gastly"", ""Haunter"", ""Gengar"", ""Drowzee"", ""Hypno"", ""Cubone"", ""Marowak"", ""Hitmonchan"", ""Lickitung"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Mr"", ""Electabuzz"", ""Magmar"", ""Snorlax"", ""Dragonite"", ""Mewtwo""]}"
+"{:name=>""Wing Attack"", :valid_pokemons=>[""Charizard"", ""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Zubat"", ""Golbat"", ""Scyther"", ""Aerodactyl"", ""Moltres"", ""Dragonite""]}"
+"{:name=>""Dragon Claw"", :valid_pokemons=>[""Charizard"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Aerodactyl"", ""Dragonite""]}"
+"{:name=>""Fire Blast"", :valid_pokemons=>[""Vulpix"", ""Ponyta"", ""Rapidash"", ""Magmar"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Nidoqueen"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Vulpix"", ""Ninetales"", ""Jigglypuff"", ""Wigglytuff"", ""Growlithe"", ""Arcanine"", ""Machop"", ""Machoke"", ""Machamp"", ""Geodude"", ""Graveler"", ""Golem"", ""Ponyta"", ""Rapidash"", ""Slowpoke"", ""Slowbro"", ""Grimer"", ""Muk"", ""Cubone"", ""Marowak"", ""Lickitung"", ""Koffing"", ""Weezing"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Magmar"", ""Tauros"", ""Gyarados"", ""Flareon"", ""Aerodactyl"", ""Snorlax"", ""Moltres"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Mewtwo""]}"
+"{:name=>""Bubble"", :valid_pokemons=>[""Squirtle"", ""Wartortle"", ""Blastoise"", ""Poliwag"", ""Poliwhirl"", ""Krabby"", ""Kingler"", ""Horsea"", ""Seadra"", ""Tentacool"", ""Tentacruel""]}"
+"{:name=>""Aqua Jet"", :valid_pokemons=>[""Golduck"", ""Seel"", ""Dewgong"", ""Kabuto"", ""Kabutops"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Dratini"", ""Dragonair"", ""Dragonite""]}"
+"{:name=>""Aqua Tail"", :valid_pokemons=>[""Squirtle"", ""Wartortle"", ""Blastoise"", ""Psyduck"", ""Golduck"", ""Seel"", ""Dewgong"", ""Gyarados"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Goldeen"", ""Seaking"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Ekans"", ""Arbok"", ""Nidoqueen"", ""Nidoking"", ""Psyduck"", ""Golduck"", ""Slowpoke"", ""Slowbro"", ""Seel"", ""Dewgong"", ""Lickitung"", ""Rhyhorn"", ""Rhydon"", ""Kangaskhan"", ""Goldeen"", ""Seaking"", ""Gyarados"", ""Lapras"", ""Vaporeon"", ""Kabutops"", ""Aerodactyl"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Mewtwo""]}"
+"{:name=>""Water Pulse"", :valid_pokemons=>[""Squirtle"", ""Wartortle"", ""Blastoise"", ""Psyduck"", ""Golduck"", ""Tentacool"", ""Tentacruel"", ""Slowpoke"", ""Slowbro"", ""Goldeen"", ""Seaking"", ""Lapras"", ""Vaporeon"", ""Poliwag"", ""Poliwhirl"", ""Poliwrath"", ""Seel"", ""Dewgong"", ""Shellder"", ""Cloyster"", ""Horsea"", ""Seadra"", ""Omanyte"", ""Omastar"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Meowth"", ""Persian"", ""Psyduck"", ""Golduck"", ""Poliwag"", ""Poliwhirl"", ""Poliwrath"", ""Tentacool"", ""Tentacruel"", ""Slowpoke"", ""Slowbro"", ""Seel"", ""Dewgong"", ""Shellder"", ""Cloyster"", ""Krabby"", ""Kingler"", ""Lickitung"", ""Chansey"", ""Kangaskhan"", ""Horsea"", ""Seadra"", ""Goldeen"", ""Seaking"", ""Staryu"", ""Starmie"", ""Jynx"", ""Tauros"", ""Gyarados"", ""Lapras"", ""Vaporeon"", ""Omanyte"", ""Omastar"", ""Kabuto"", ""Kabutops"", ""Snorlax"", ""Articuno"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Mewtwo""]}"
+"{:name=>""Bite"", :valid_pokemons=>[""Squirtle"", ""Wartortle"", ""Blastoise"", ""Rattata"", ""Raticate"", ""Ekans"", ""Arbok"", ""Arbok"", ""Nidoran"", ""Nidorina"", ""Zubat"", ""Golbat"", ""Golbat"", ""Meowth"", ""Persian"", ""Persian"", ""Growlithe"", ""Arcanine"", ""Kangaskhan"", ""Gyarados"", ""Eevee"", ""Flareon"", ""Omanyte"", ""Omastar"", ""Omastar"", ""Aerodactyl"", ""Zygarde"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Rattata"", ""Raticate""]}"
+"{:name=>""Water Gun"", :valid_pokemons=>[""Squirtle"", ""Wartortle"", ""Wartortle"", ""Blastoise"", ""Blastoise"", ""Psyduck"", ""Golduck"", ""Golduck"", ""Poliwag"", ""Poliwhirl"", ""Poliwhirl"", ""Slowpoke"", ""Slowbro"", ""Horsea"", ""Seadra"", ""Seadra"", ""Staryu"", ""Starmie"", ""Lapras"", ""Vaporeon"", ""Omanyte"", ""Omastar""]}"
+"{:name=>""Hydro Pump"", :valid_pokemons=>[""Squirtle"", ""Wartortle"", ""Blastoise"", ""Psyduck"", ""Golduck"", ""Poliwag"", ""Poliwhirl"", ""Tentacool"", ""Tentacruel"", ""Shellder"", ""Cloyster"", ""Horsea"", ""Seadra"", ""Seadra"", ""Staryu"", ""Starmie"", ""Gyarados"", ""Lapras"", ""Vaporeon"", ""Omanyte"", ""Omastar"", ""Omastar"", ""Goldeen"", ""Seaking"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Oddish"", ""Gloom"", ""Vileplume"", ""Paras"", ""Parasect"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Geodude"", ""Graveler"", ""Golem"", ""Onix"", ""Exeggcute"", ""Exeggutor"", ""Tangela"", ""Kabutops""]}"
+"{:name=>""Ice Beam"", :valid_pokemons=>[""Seel"", ""Dewgong"", ""Shellder"", ""Lapras"", ""Articuno"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Rattata"", ""Raticate"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Psyduck"", ""Golduck"", ""Poliwag"", ""Poliwhirl"", ""Poliwrath"", ""Tentacool"", ""Tentacruel"", ""Slowpoke"", ""Slowbro"", ""Seel"", ""Dewgong"", ""Shellder"", ""Cloyster"", ""Krabby"", ""Kingler"", ""Cubone"", ""Marowak"", ""Lickitung"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Horsea"", ""Seadra"", ""Goldeen"", ""Seaking"", ""Staryu"", ""Starmie"", ""Jynx"", ""Tauros"", ""Gyarados"", ""Lapras"", ""Vaporeon"", ""Porygon"", ""Omanyte"", ""Omastar"", ""Kabuto"", ""Kabutops"", ""Snorlax"", ""Articuno"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Mewtwo"", ""Porygon"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Oddish"", ""Gloom"", ""Vileplume"", ""Paras"", ""Parasect"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Geodude"", ""Graveler"", ""Golem"", ""Onix"", ""Exeggcute"", ""Exeggutor"", ""Tangela"", ""Kabutops""]}"
+"{:name=>""Flash Cannon"", :valid_pokemons=>[""Blastoise"", ""Magnemite"", ""Magneton"", ""Blastoise"", ""Magnemite"", ""Magneton"", ""Onix"", ""Horsea"", ""Seadra"", ""Staryu"", ""Starmie""]}"
+"{:name=>""Bug Bite"", :valid_pokemons=>[""Caterpie"", ""Weedle"", ""Paras"", ""Parasect"", ""Venonat"", ""Venomoth"", ""Pinsir"", ""Caterpie"", ""Metapod"", ""Butterfree"", ""Weedle"", ""Kakuna"", ""Beedrill"", ""Paras"", ""Parasect"", ""Venonat"", ""Venomoth"", ""Scyther"", ""Pinsir"", ""Weepinbell"", ""Victreebel""]}"
+{}
+"{:name=>""Confusion"", :valid_pokemons=>[""Butterfree"", ""Butterfree"", ""Venonat"", ""Venomoth"", ""Psyduck"", ""Golduck"", ""Kadabra"", ""Kadabra"", ""Alakazam"", ""Alakazam"", ""Slowpoke"", ""Slowbro"", ""Drowzee"", ""Hypno"", ""Hypno"", ""Exeggcute"", ""Exeggutor"", ""Mr"", ""Mewtwo"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Tangela""]}"
+"{:name=>""Bug Buzz"", :valid_pokemons=>[""Butterfree"", ""Venomoth"", ""Venomoth"", ""Scyther""]}"
+"{:name=>""Psychic"", :valid_pokemons=>[""Venonat"", ""Venomoth"", ""Kadabra"", ""Alakazam"", ""Slowpoke"", ""Slowbro"", ""Drowzee"", ""Hypno"", ""Staryu"", ""Mr"", ""Mewtwo"", ""Butterfree"", ""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Venonat"", ""Venomoth"", ""Psyduck"", ""Golduck"", ""Poliwag"", ""Poliwhirl"", ""Poliwrath"", ""Abra"", ""Kadabra"", ""Alakazam"", ""Slowpoke"", ""Slowbro"", ""Gastly"", ""Haunter"", ""Gengar"", ""Drowzee"", ""Hypno"", ""Exeggcute"", ""Exeggutor"", ""Chansey"", ""Staryu"", ""Starmie"", ""Mr"", ""Jynx"", ""Electabuzz"", ""Magmar"", ""Lapras"", ""Porygon"", ""Snorlax"", ""Mewtwo"", ""Porygon""]}"
+"{:name=>""Signal Beam"", :valid_pokemons=>[""Venonat"", ""Venomoth"", ""Dewgong"", ""Dewgong"", ""Porygon"", ""Porygon"", ""Venonat"", ""Venomoth"", ""Seel"", ""Dewgong"", ""Horsea"", ""Seadra"", ""Goldeen"", ""Seaking"", ""Blastoise"", ""Butterfree"", ""Pikachu"", ""Raichu"", ""Clefairy"", ""Clefable"", ""Venonat"", ""Venomoth"", ""Psyduck"", ""Golduck"", ""Abra"", ""Kadabra"", ""Alakazam"", ""Slowpoke"", ""Slowbro"", ""Magnemite"", ""Magneton"", ""Seel"", ""Dewgong"", ""Cloyster"", ""Drowzee"", ""Hypno"", ""Voltorb"", ""Electrode"", ""Horsea"", ""Seadra"", ""Goldeen"", ""Seaking"", ""Staryu"", ""Starmie"", ""Mr"", ""Jynx"", ""Electabuzz"", ""Lapras"", ""Vaporeon"", ""Jolteon"", ""Porygon"", ""Articuno"", ""Zapdos"", ""Mewtwo"", ""Porygon""]}"
+"{:name=>""Poison Sting"", :valid_pokemons=>[""Weedle"", ""Ekans"", ""Arbok"", ""Arbok"", ""Sandshrew"", ""Sandslash"", ""Sandslash"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Tentacool"", ""Tentacruel""]}"
+"{:name=>""Poison Jab"", :valid_pokemons=>[""Beedrill"", ""Nidoran"", ""Nidorino"", ""Tentacool"", ""Tentacruel"", ""Rapidash"", ""Farfetch"", ""Seaking"", ""Beedrill"", ""Ekans"", ""Arbok"", ""Sandshrew"", ""Sandslash"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Mankey"", ""Primeape"", ""Poliwrath"", ""Machop"", ""Machoke"", ""Machamp"", ""Tentacool"", ""Tentacruel"", ""Rapidash"", ""Farfetch"", ""Grimer"", ""Muk"", ""Cloyster"", ""Haunter"", ""Gengar"", ""Hitmonlee"", ""Rhyhorn"", ""Rhydon"", ""Goldeen"", ""Seaking"", ""Mewtwo""]}"
+"{:name=>""Aerial Ace"", :valid_pokemons=>[""Spearow"", ""Fearow"", ""Farfetch"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Butterfree"", ""Beedrill"", ""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Spearow"", ""Fearow"", ""Sandshrew"", ""Sandslash"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Zubat"", ""Golbat"", ""Paras"", ""Parasect"", ""Venomoth"", ""Diglett"", ""Dugtrio"", ""Meowth"", ""Persian"", ""Psyduck"", ""Golduck"", ""Mankey"", ""Primeape"", ""Growlithe"", ""Arcanine"", ""Slowbro"", ""Farfetch"", ""Doduo"", ""Dodrio"", ""Cubone"", ""Marowak"", ""Kangaskhan"", ""Mr"", ""Scyther"", ""Porygon"", ""Kabuto"", ""Kabutops"", ""Aerodactyl"", ""Articuno"", ""Zapdos"", ""Moltres"", ""Dragonite"", ""Mewtwo"", ""Porygon""]}"
+"{:name=>""X-Scissor"", :valid_pokemons=>[""Paras"", ""Parasect"", ""Scyther"", ""Pinsir"", ""Beedrill"", ""Sandshrew"", ""Sandslash"", ""Paras"", ""Parasect"", ""Krabby"", ""Kingler"", ""Scyther"", ""Pinsir"", ""Kabutops""]}"
+"{:name=>""Quick Attack"", :valid_pokemons=>[""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Pidgeot"", ""Rattata"", ""Raticate"", ""Raticate"", ""Pikachu"", ""Raichu"", ""Vulpix"", ""Ninetales"", ""Rapidash"", ""Doduo"", ""Dodrio"", ""Dodrio"", ""Scyther"", ""Electabuzz"", ""Eevee"", ""Vaporeon"", ""Jolteon"", ""Flareon"", ""Spearow"", ""Fearow"", ""Zubat"", ""Golbat"", ""Farfetch"", ""Doduo"", ""Dodrio"", ""Pinsir"", ""Ponyta""]}"
+"{:name=>""Air Cutter"", :valid_pokemons=>[""Zubat"", ""Golbat"", ""Farfetch"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Butterfree"", ""Beedrill"", ""Spearow"", ""Fearow"", ""Venomoth"", ""Doduo"", ""Dodrio"", ""Aerodactyl"", ""Articuno"", ""Zapdos"", ""Moltres"", ""Dragonite""]}"
+"{:name=>""Twister"", :valid_pokemons=>[""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Horsea"", ""Seadra"", ""Gyarados"", ""Dratini"", ""Dragonair"", ""Dragonair"", ""Dragonite"", ""Dragonite"", ""Charizard"", ""Butterfree"", ""Spearow"", ""Fearow"", ""Zubat"", ""Golbat"", ""Venomoth"", ""Farfetch"", ""Onix"", ""Staryu"", ""Starmie"", ""Aerodactyl"", ""Articuno"", ""Zapdos"", ""Moltres""]}"
+"{:name=>""Steel Wing"", :valid_pokemons=>[""Charizard"", ""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Spearow"", ""Fearow"", ""Zubat"", ""Golbat"", ""Farfetch"", ""Doduo"", ""Dodrio"", ""Scyther"", ""Aerodactyl"", ""Articuno"", ""Zapdos"", ""Moltres"", ""Dragonite"", ""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Spearow"", ""Fearow"", ""Zubat"", ""Golbat"", ""Farfetch"", ""Scyther"", ""Aerodactyl""]}"
+"{:name=>""Hurricane"", :valid_pokemons=>[""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Pidgeot"", ""Articuno"", ""Articuno"", ""Moltres"", ""Moltres"", ""Dragonite"", ""Dragonite""]}"
+"{:name=>""Body Slam"", :valid_pokemons=>[""Nidoqueen"", ""Clefairy"", ""Jigglypuff"", ""Poliwag"", ""Poliwhirl"", ""Jynx"", ""Lapras"", ""Snorlax"", ""Growlithe"", ""Arcanine"", ""Lickitung"", ""Goldeen"", ""Seaking"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Rattata"", ""Raticate"", ""Ekans"", ""Arbok"", ""Pikachu"", ""Raichu"", ""Sandshrew"", ""Sandslash"", ""Nidoran"", ""Nidorina"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Vulpix"", ""Ninetales"", ""Vileplume"", ""Paras"", ""Parasect"", ""Diglett"", ""Dugtrio"", ""Meowth"", ""Persian"", ""Psyduck"", ""Golduck"", ""Mankey"", ""Primeape"", ""Abra"", ""Kadabra"", ""Alakazam"", ""Machop"", ""Machoke"", ""Machamp"", ""Victreebel"", ""Geodude"", ""Graveler"", ""Golem"", ""Ponyta"", ""Rapidash"", ""Slowpoke"", ""Slowbro"", ""Farfetch"", ""Doduo"", ""Dodrio"", ""Seel"", ""Dewgong"", ""Grimer"", ""Muk"", ""Gengar"", ""Onix"", ""Drowzee"", ""Hypno"", ""Krabby"", ""Kingler"", ""Cubone"", ""Marowak"", ""Hitmonlee"", ""Hitmonchan"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Tangela"", ""Kangaskhan"", ""Mr"", ""Electabuzz"", ""Magmar"", ""Pinsir"", ""Tauros"", ""Gyarados"", ""Eevee"", ""Vaporeon"", ""Jolteon"", ""Flareon"", ""Omanyte"", ""Omastar"", ""Kabuto"", ""Kabutops"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Mewtwo""]}"
+"{:name=>""Dig"", :valid_pokemons=>[""Sandshrew"", ""Sandslash"", ""Diglett"", ""Dugtrio"", ""Onix"", ""Zygarde"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Rattata"", ""Raticate"", ""Ekans"", ""Arbok"", ""Pikachu"", ""Raichu"", ""Sandshrew"", ""Sandslash"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Vulpix"", ""Ninetales"", ""Jigglypuff"", ""Wigglytuff"", ""Paras"", ""Parasect"", ""Diglett"", ""Dugtrio"", ""Meowth"", ""Persian"", ""Psyduck"", ""Golduck"", ""Mankey"", ""Primeape"", ""Growlithe"", ""Arcanine"", ""Poliwag"", ""Poliwhirl"", ""Poliwrath"", ""Machop"", ""Machoke"", ""Machamp"", ""Geodude"", ""Graveler"", ""Golem"", ""Slowpoke"", ""Slowbro"", ""Grimer"", ""Muk"", ""Onix"", ""Krabby"", ""Kingler"", ""Cubone"", ""Marowak"", ""Lickitung"", ""Rhyhorn"", ""Rhydon"", ""Kangaskhan"", ""Pinsir"", ""Eevee"", ""Vaporeon"", ""Jolteon"", ""Flareon"", ""Kabuto"", ""Kabutops"", ""Zygarde""]}"
+"{:name=>""Hyper Fang"", :valid_pokemons=>[""Rattata"", ""Raticate""]}"
+"{:name=>""Hyper Beam"", :valid_pokemons=>[""Gyarados"", ""Aerodactyl"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Porygon"", ""Venusaur"", ""Charizard"", ""Blastoise"", ""Butterfree"", ""Beedrill"", ""Pidgeot"", ""Raticate"", ""Fearow"", ""Arbok"", ""Raichu"", ""Sandslash"", ""Nidoqueen"", ""Nidoking"", ""Clefable"", ""Ninetales"", ""Wigglytuff"", ""Golbat"", ""Vileplume"", ""Parasect"", ""Venomoth"", ""Dugtrio"", ""Persian"", ""Golduck"", ""Primeape"", ""Arcanine"", ""Poliwrath"", ""Alakazam"", ""Machamp"", ""Victreebel"", ""Tentacruel"", ""Golem"", ""Rapidash"", ""Slowbro"", ""Magneton"", ""Dodrio"", ""Dewgong"", ""Muk"", ""Cloyster"", ""Gengar"", ""Hypno"", ""Kingler"", ""Electrode"", ""Exeggutor"", ""Marowak"", ""Lickitung"", ""Weezing"", ""Rhydon"", ""Chansey"", ""Tangela"", ""Kangaskhan"", ""Seadra"", ""Seaking"", ""Starmie"", ""Mr"", ""Scyther"", ""Jynx"", ""Electabuzz"", ""Magmar"", ""Pinsir"", ""Tauros"", ""Gyarados"", ""Lapras"", ""Vaporeon"", ""Jolteon"", ""Flareon"", ""Porygon"", ""Omastar"", ""Kabutops"", ""Aerodactyl"", ""Snorlax"", ""Articuno"", ""Zapdos"", ""Moltres"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Mewtwo"", ""Porygon"", ""Zygarde""]}"
+"{:name=>""Peck"", :valid_pokemons=>[""Spearow"", ""Fearow"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Farfetch"", ""Doduo"", ""Dodrio"", ""Goldeen"", ""Seaking"", ""Zapdos""]}"
+"{:name=>""Drill Peck"", :valid_pokemons=>[""Spearow"", ""Fearow"", ""Doduo"", ""Dodrio"", ""Zapdos"", ""Zapdos""]}"
+"{:name=>""Drill Run"", :valid_pokemons=>[""Fearow"", ""Fearow"", ""Rhyhorn"", ""Rhydon"", ""Beedrill"", ""Spearow"", ""Fearow"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Rapidash"", ""Seel"", ""Dewgong"", ""Rhyhorn"", ""Rhydon"", ""Goldeen"", ""Seaking"", ""Lapras""]}"
+"{:name=>""Acid"", :valid_pokemons=>[""Ekans"", ""Arbok"", ""Oddish"", ""Gloom"", ""Gloom"", ""Bellsprout"", ""Weepinbell"", ""Tentacool"", ""Tentacruel"", ""Tentacruel""]}"
+"{:name=>""Gunk Shot"", :valid_pokemons=>[""Ekans"", ""Arbok"", ""Grimer"", ""Muk"", ""Ekans"", ""Arbok"", ""Meowth"", ""Persian"", ""Mankey"", ""Primeape"", ""Grimer"", ""Muk"", ""Snorlax""]}"
+"{:name=>""Wrap"", :valid_pokemons=>[""Ekans"", ""Arbok"", ""Bellsprout"", ""Weepinbell"", ""Weepinbell"", ""Tentacool"", ""Tentacruel"", ""Lickitung"", ""Dratini"", ""Dragonair"", ""Dragonite""]}"
+"{:name=>""Dark Pulse"", :valid_pokemons=>[""Gastly"", ""Haunter"", ""Gengar"", ""Blastoise"", ""Ekans"", ""Arbok"", ""Vulpix"", ""Ninetales"", ""Meowth"", ""Persian"", ""Muk"", ""Gastly"", ""Haunter"", ""Gengar"", ""Koffing"", ""Weezing"", ""Gyarados""]}"
+"{:name=>""Sludge Wave"", :valid_pokemons=>[""Tentacool"", ""Tentacruel"", ""Grimer"", ""Muk"", ""Ekans"", ""Arbok"", ""Nidoqueen"", ""Nidoking"", ""Dugtrio"", ""Tentacool"", ""Tentacruel"", ""Grimer"", ""Muk"", ""Zygarde""]}"
+"{:name=>""Thunder Shock"", :valid_pokemons=>[""Pikachu"", ""Raichu"", ""Magnemite"", ""Magneton"", ""Magneton"", ""Electabuzz"", ""Electabuzz"", ""Jolteon"", ""Zapdos""]}"
+"{:name=>""Discharge"", :valid_pokemons=>[""Pikachu"", ""Magnemite"", ""Magneton"", ""Voltorb"", ""Electrode"", ""Electabuzz"", ""Jolteon"", ""Porygon"", ""Zapdos"", ""Porygon""]}"
+"{:name=>""Thunder"", :valid_pokemons=>[""Pikachu"", ""Electabuzz"", ""Jolteon"", ""Zapdos"", ""Rattata"", ""Raticate"", ""Pikachu"", ""Raichu"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Meowth"", ""Persian"", ""Mankey"", ""Primeape"", ""Magnemite"", ""Magneton"", ""Grimer"", ""Muk"", ""Gengar"", ""Voltorb"", ""Electrode"", ""Lickitung"", ""Koffing"", ""Weezing"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Staryu"", ""Starmie"", ""Mr"", ""Electabuzz"", ""Tauros"", ""Gyarados"", ""Lapras"", ""Jolteon"", ""Porygon"", ""Snorlax"", ""Zapdos"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Mewtwo"", ""Porygon""]}"
+"{:name=>""Thunderbolt"", :valid_pokemons=>[""Pikachu"", ""Raichu"", ""Electabuzz"", ""Rattata"", ""Raticate"", ""Pikachu"", ""Raichu"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Meowth"", ""Persian"", ""Mankey"", ""Primeape"", ""Magnemite"", ""Magneton"", ""Grimer"", ""Muk"", ""Gastly"", ""Haunter"", ""Gengar"", ""Voltorb"", ""Electrode"", ""Lickitung"", ""Koffing"", ""Weezing"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Staryu"", ""Starmie"", ""Mr"", ""Electabuzz"", ""Tauros"", ""Gyarados"", ""Lapras"", ""Jolteon"", ""Porygon"", ""Snorlax"", ""Zapdos"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Mewtwo"", ""Porygon"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Oddish"", ""Gloom"", ""Vileplume"", ""Paras"", ""Parasect"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Geodude"", ""Graveler"", ""Golem"", ""Onix"", ""Exeggcute"", ""Exeggutor"", ""Tangela"", ""Kabutops""]}"
+"{:name=>""Spark"", :valid_pokemons=>[""Pikachu"", ""Magnemite"", ""Magneton"", ""Voltorb"", ""Electrode"", ""Electrode""]}"
+"{:name=>""Brick Break"", :valid_pokemons=>[""Hitmonlee"", ""Pinsir"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Beedrill"", ""Pikachu"", ""Raichu"", ""Sandshrew"", ""Sandslash"", ""Nidoqueen"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Paras"", ""Parasect"", ""Psyduck"", ""Golduck"", ""Mankey"", ""Primeape"", ""Poliwhirl"", ""Poliwrath"", ""Machop"", ""Machoke"", ""Machamp"", ""Geodude"", ""Graveler"", ""Golem"", ""Slowbro"", ""Muk"", ""Gengar"", ""Drowzee"", ""Hypno"", ""Krabby"", ""Kingler"", ""Cubone"", ""Marowak"", ""Hitmonlee"", ""Hitmonchan"", ""Lickitung"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Mr"", ""Scyther"", ""Jynx"", ""Electabuzz"", ""Magmar"", ""Pinsir"", ""Kabutops"", ""Snorlax"", ""Dragonite"", ""Mewtwo"", ""Zygarde""]}"
+"{:name=>""Thunder Punch"", :valid_pokemons=>[""Hitmonchan"", ""Electabuzz"", ""Dragonite"", ""Pikachu"", ""Raichu"", ""Abra"", ""Kadabra"", ""Alakazam"", ""Machop"", ""Machoke"", ""Machamp"", ""Gastly"", ""Haunter"", ""Gengar"", ""Drowzee"", ""Hypno"", ""Magmar"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Pikachu"", ""Raichu"", ""Nidoqueen"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Mankey"", ""Primeape"", ""Abra"", ""Kadabra"", ""Alakazam"", ""Machop"", ""Machoke"", ""Machamp"", ""Geodude"", ""Graveler"", ""Golem"", ""Grimer"", ""Muk"", ""Gastly"", ""Haunter"", ""Gengar"", ""Drowzee"", ""Hypno"", ""Cubone"", ""Marowak"", ""Hitmonchan"", ""Lickitung"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Mr"", ""Electabuzz"", ""Magmar"", ""Snorlax"", ""Dragonite"", ""Mewtwo""]}"
+"{:name=>""Mud Shot"", :valid_pokemons=>[""Poliwag"", ""Poliwhirl"", ""Krabby"", ""Kingler"", ""Omanyte"", ""Omastar"", ""Kabuto"", ""Kabutops"", ""Sandshrew"", ""Sandslash"", ""Poliwag"", ""Poliwhirl"", ""Poliwrath"", ""Shellder"", ""Cloyster"", ""Goldeen"", ""Seaking"", ""Kabuto"", ""Kabutops""]}"
+"{:name=>""Rock Slide"", :valid_pokemons=>[""Onix"", ""Aerodactyl"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Blastoise"", ""Ekans"", ""Arbok"", ""Sandshrew"", ""Sandslash"", ""Nidoqueen"", ""Nidoking"", ""Diglett"", ""Dugtrio"", ""Mankey"", ""Primeape"", ""Poliwrath"", ""Machop"", ""Machoke"", ""Machamp"", ""Geodude"", ""Graveler"", ""Golem"", ""Grimer"", ""Muk"", ""Onix"", ""Krabby"", ""Kingler"", ""Cubone"", ""Marowak"", ""Hitmonlee"", ""Hitmonchan"", ""Lickitung"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Pinsir"", ""Tauros"", ""Omanyte"", ""Omastar"", ""Kabuto"", ""Kabutops"", ""Aerodactyl"", ""Snorlax"", ""Dragonite"", ""Mewtwo"", ""Zygarde""]}"
+"{:name=>""Rock Tomb"", :valid_pokemons=>[""Onix"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Ekans"", ""Arbok"", ""Sandshrew"", ""Sandslash"", ""Nidoqueen"", ""Nidoking"", ""Diglett"", ""Dugtrio"", ""Mankey"", ""Primeape"", ""Poliwrath"", ""Machop"", ""Machoke"", ""Machamp"", ""Geodude"", ""Graveler"", ""Golem"", ""Grimer"", ""Muk"", ""Onix"", ""Krabby"", ""Kingler"", ""Cubone"", ""Marowak"", ""Hitmonlee"", ""Hitmonchan"", ""Lickitung"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Pinsir"", ""Tauros"", ""Omanyte"", ""Omastar"", ""Kabuto"", ""Kabutops"", ""Aerodactyl"", ""Snorlax"", ""Dragonite"", ""Mewtwo""]}"
+"{:name=>""Metal Claw"", :valid_pokemons=>[""Krabby"", ""Kingler"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Sandshrew"", ""Sandslash"", ""Paras"", ""Parasect""]}"
+"{:name=>""Bulldoze"", :valid_pokemons=>[""Diglett"", ""Dugtrio"", ""Geodude"", ""Graveler"", ""Golem"", ""Rhyhorn"", ""Rhydon"", ""Zygarde"", ""Venusaur"", ""Charizard"", ""Blastoise"", ""Ekans"", ""Arbok"", ""Sandshrew"", ""Sandslash"", ""Nidoqueen"", ""Nidoking"", ""Diglett"", ""Dugtrio"", ""Mankey"", ""Primeape"", ""Arcanine"", ""Poliwhirl"", ""Poliwrath"", ""Machop"", ""Machoke"", ""Machamp"", ""Geodude"", ""Graveler"", ""Golem"", ""Slowpoke"", ""Slowbro"", ""Onix"", ""Cubone"", ""Marowak"", ""Hitmonlee"", ""Hitmonchan"", ""Lickitung"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Pinsir"", ""Tauros"", ""Gyarados"", ""Lapras"", ""Aerodactyl"", ""Snorlax"", ""Dragonite"", ""Mewtwo"", ""Zygarde""]}"
+"{:name=>""Earthquake"", :valid_pokemons=>[""Sandshrew"", ""Sandslash"", ""Diglett"", ""Dugtrio"", ""Geodude"", ""Graveler"", ""Golem"", ""Rhyhorn"", ""Rhydon"", ""Zygarde"", ""Venusaur"", ""Charizard"", ""Blastoise"", ""Ekans"", ""Arbok"", ""Sandshrew"", ""Sandslash"", ""Nidoqueen"", ""Nidoking"", ""Diglett"", ""Dugtrio"", ""Mankey"", ""Primeape"", ""Poliwhirl"", ""Poliwrath"", ""Machop"", ""Machoke"", ""Machamp"", ""Geodude"", ""Graveler"", ""Golem"", ""Slowpoke"", ""Slowbro"", ""Onix"", ""Cubone"", ""Marowak"", ""Hitmonlee"", ""Hitmonchan"", ""Lickitung"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Pinsir"", ""Tauros"", ""Gyarados"", ""Aerodactyl"", ""Snorlax"", ""Dragonite"", ""Mewtwo"", ""Zygarde""]}"
+"{:name=>""Poison Fang"", :valid_pokemons=>[""Nidoran"", ""Nidorina"", ""Zubat"", ""Golbat"", ""Venonat"", ""Venomoth"", ""Ekans"", ""Arbok""]}"
+"{:name=>""Stone Edge"", :valid_pokemons=>[""Geodude"", ""Graveler"", ""Golem"", ""Onix"", ""Rhyhorn"", ""Rhydon"", ""Sandslash"", ""Nidoqueen"", ""Nidoking"", ""Dugtrio"", ""Primeape"", ""Machamp"", ""Geodude"", ""Graveler"", ""Golem"", ""Onix"", ""Marowak"", ""Hitmonlee"", ""Hitmonchan"", ""Rhyhorn"", ""Rhydon"", ""Pinsir"", ""Tauros"", ""Gyarados"", ""Omastar"", ""Kabutops"", ""Aerodactyl"", ""Dragonite"", ""Mewtwo"", ""Zygarde""]}"
+"{:name=>""Horn Attack"", :valid_pokemons=>[""Nidoran"", ""Nidorino"", ""Rhyhorn"", ""Rhydon"", ""Goldeen"", ""Seaking"", ""Tauros""]}"
+"{:name=>""Fury Cutter"", :valid_pokemons=>[""Sandshrew"", ""Sandslash"", ""Paras"", ""Parasect"", ""Farfetch"", ""Scyther"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Beedrill"", ""Nidoqueen"", ""Nidoking"", ""Golduck"", ""Golem"", ""Slowbro"", ""Krabby"", ""Kingler"", ""Cubone"", ""Marowak"", ""Rhydon"", ""Kangaskhan"", ""Goldeen"", ""Seaking"", ""Pinsir"", ""Kabutops"", ""Dragonite""]}"
+"{:name=>""Megahorn"", :valid_pokemons=>[""Nidoking"", ""Nidoking"", ""Rapidash"", ""Rhyhorn"", ""Rhydon"", ""Goldeen"", ""Seaking"", ""Seaking""]}"
+"{:name=>""Pound"", :valid_pokemons=>[""Clefairy"", ""Jigglypuff"", ""Grimer"", ""Muk"", ""Drowzee"", ""Hypno"", ""Chansey"", ""Jynx""]}"
+"{:name=>""Zen Headbutt"", :valid_pokemons=>[""Venonat"", ""Venomoth"", ""Psyduck"", ""Golduck"", ""Slowpoke"", ""Slowbro"", ""Drowzee"", ""Hypno"", ""Tauros"", ""Zubat"", ""Golbat"", ""Slowpoke"", ""Slowbro"", ""Lickitung"", ""Snorlax"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Rattata"", ""Raticate"", ""Clefairy"", ""Clefable"", ""Vulpix"", ""Ninetales"", ""Zubat"", ""Golbat"", ""Venonat"", ""Venomoth"", ""Psyduck"", ""Golduck"", ""Abra"", ""Kadabra"", ""Alakazam"", ""Slowpoke"", ""Slowbro"", ""Drowzee"", ""Hypno"", ""Exeggutor"", ""Lickitung"", ""Chansey"", ""Mr"", ""Jynx"", ""Tauros"", ""Lapras"", ""Porygon"", ""Snorlax"", ""Mewtwo"", ""Porygon"", ""Zygarde""]}"
+"{:name=>""Disarming Voice"", :valid_pokemons=>[""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Pikachu"", ""Raichu""]}"
+"{:name=>""Moonblast"", :valid_pokemons=>[""Clefairy"", ""Oddish"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Oddish"", ""Gloom"", ""Vileplume"", ""Paras"", ""Parasect"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Geodude"", ""Graveler"", ""Golem"", ""Onix"", ""Exeggcute"", ""Exeggutor"", ""Tangela"", ""Kabutops""]}"
+"{:name=>""Dazzling Gleam"", :valid_pokemons=>[""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Oddish"", ""Gloom"", ""Vileplume"", ""Abra"", ""Kadabra"", ""Alakazam"", ""Tentacool"", ""Tentacruel"", ""Gastly"", ""Haunter"", ""Gengar"", ""Drowzee"", ""Hypno"", ""Chansey"", ""Staryu"", ""Starmie"", ""Mr""]}"
+"{:name=>""Feint Attack"", :valid_pokemons=>[""Vulpix"", ""Meowth"", ""Persian"", ""Magmar"", ""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Spearow"", ""Fearow"", ""Vulpix"", ""Ninetales"", ""Jigglypuff"", ""Wigglytuff"", ""Zubat"", ""Golbat"", ""Diglett"", ""Dugtrio"", ""Doduo"", ""Dodrio"", ""Pinsir""]}"
+"{:name=>""Heat Wave"", :valid_pokemons=>[""Charizard"", ""Charizard"", ""Growlithe"", ""Moltres"", ""Moltres"", ""Vulpix"", ""Ninetales"", ""Growlithe"", ""Arcanine"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Spearow"", ""Fearow"", ""Vulpix"", ""Ninetales"", ""Zubat"", ""Golbat"", ""Growlithe"", ""Arcanine"", ""Ponyta"", ""Rapidash"", ""Farfetch"", ""Magmar"", ""Flareon"", ""Aerodactyl"", ""Zapdos"", ""Moltres"", ""Dragonite""]}"
+"{:name=>""Play Rough"", :valid_pokemons=>[""Wigglytuff"", ""Persian""]}"
+"{:name=>""Ominous Wind"", :valid_pokemons=>[""Charizard"", ""Butterfree"", ""Beedrill"", ""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Spearow"", ""Fearow"", ""Vulpix"", ""Ninetales"", ""Zubat"", ""Golbat"", ""Venomoth"", ""Farfetch"", ""Gastly"", ""Haunter"", ""Gengar"", ""Scyther"", ""Aerodactyl"", ""Articuno"", ""Zapdos"", ""Moltres"", ""Dragonite""]}"
+"{:name=>""Cross Poison"", :valid_pokemons=>[""Parasect"", ""Paras"", ""Parasect""]}"
+"{:name=>""Psybeam"", :valid_pokemons=>[""Butterfree"", ""Venonat"", ""Venomoth"", ""Kadabra"", ""Alakazam"", ""Drowzee"", ""Hypno"", ""Mr"", ""Porygon"", ""Porygon"", ""Paras"", ""Parasect"", ""Psyduck"", ""Golduck"", ""Koffing"", ""Weezing"", ""Goldeen"", ""Seaking""]}"
+"{:name=>""Shadow Ball"", :valid_pokemons=>[""Gastly"", ""Haunter"", ""Gengar"", ""Butterfree"", ""Rattata"", ""Raticate"", ""Nidoqueen"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Zubat"", ""Golbat"", ""Meowth"", ""Persian"", ""Abra"", ""Kadabra"", ""Alakazam"", ""Slowpoke"", ""Slowbro"", ""Grimer"", ""Muk"", ""Gastly"", ""Haunter"", ""Gengar"", ""Drowzee"", ""Hypno"", ""Lickitung"", ""Koffing"", ""Weezing"", ""Chansey"", ""Kangaskhan"", ""Mr"", ""Jynx"", ""Eevee"", ""Vaporeon"", ""Jolteon"", ""Flareon"", ""Porygon"", ""Snorlax"", ""Mewtwo"", ""Porygon""]}"
+"{:name=>""Mud Bomb"", :valid_pokemons=>[""Ekans"", ""Arbok"", ""Diglett"", ""Dugtrio"", ""Poliwag"", ""Poliwhirl"", ""Grimer"", ""Muk"", ""Diglett"", ""Dugtrio"", ""Psyduck"", ""Golduck"", ""Chansey"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Oddish"", ""Gloom"", ""Vileplume"", ""Paras"", ""Parasect"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Geodude"", ""Graveler"", ""Golem"", ""Onix"", ""Exeggcute"", ""Exeggutor"", ""Tangela"", ""Kabutops""]}"
+"{:name=>""Sucker Punch"", :valid_pokemons=>[""Rattata"", ""Raticate"", ""Diglett"", ""Dugtrio"", ""Gastly"", ""Haunter"", ""Gengar"", ""Kangaskhan"", ""Ekans"", ""Arbok"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Geodude"", ""Graveler"", ""Golem"", ""Voltorb"", ""Electrode"", ""Hitmonlee""]}"
+"{:name=>""Night Slash"", :valid_pokemons=>[""Dugtrio"", ""Meowth"", ""Persian"", ""Farfetch"", ""Scyther"", ""Kabutops"", ""Kabutops"", ""Sandshrew"", ""Sandslash"", ""Mankey"", ""Primeape"", ""Farfetch"", ""Scyther""]}"
+"{:name=>""Power Gem"", :valid_pokemons=>[""Persian"", ""Staryu"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Oddish"", ""Gloom"", ""Vileplume"", ""Paras"", ""Parasect"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Geodude"", ""Graveler"", ""Golem"", ""Onix"", ""Exeggcute"", ""Exeggutor"", ""Tangela"", ""Kabutops""]}"
+"{:name=>""Cross Chop"", :valid_pokemons=>[""Mankey"", ""Primeape"", ""Machop"", ""Machoke"", ""Machamp"", ""Psyduck"", ""Golduck"", ""Electabuzz"", ""Magmar""]}"
+"{:name=>""Karate Chop"", :valid_pokemons=>[""Mankey"", ""Primeape"", ""Machop"", ""Machoke"", ""Machoke"", ""Machamp"", ""Machamp"", ""Electabuzz"", ""Magmar""]}"
+"{:name=>""Low Sweep"", :valid_pokemons=>[""Machop"", ""Machoke"", ""Machamp"", ""Golduck"", ""Mankey"", ""Primeape"", ""Poliwrath"", ""Machop"", ""Machoke"", ""Machamp"", ""Drowzee"", ""Hypno"", ""Hitmonlee"", ""Hitmonchan"", ""Electabuzz"", ""Magmar"", ""Mewtwo""]}"
+"{:name=>""Low Kick"", :valid_pokemons=>[""Mankey"", ""Primeape"", ""Machop"", ""Machoke"", ""Machamp"", ""Electabuzz"", ""Ponyta"", ""Rapidash"", ""Golduck"", ""Mankey"", ""Primeape"", ""Machop"", ""Machoke"", ""Machamp"", ""Ponyta"", ""Rapidash"", ""Drowzee"", ""Hypno"", ""Exeggutor"", ""Cubone"", ""Marowak"", ""Hitmonlee"", ""Hitmonchan"", ""Kangaskhan"", ""Electabuzz"", ""Magmar"", ""Kabutops"", ""Mewtwo""]}"
+"{:name=>""Flame Wheel"", :valid_pokemons=>[""Growlithe"", ""Ponyta"", ""Rapidash"", ""Rattata"", ""Raticate"", ""Ponyta"", ""Rapidash""]}"
+"{:name=>""Fire Fang"", :valid_pokemons=>[""Charmander"", ""Charmeleon"", ""Charizard"", ""Arbok"", ""Growlithe"", ""Arcanine"", ""Flareon"", ""Aerodactyl"", ""Rhyhorn"", ""Rhydon""]}"
+"{:name=>""Bubble Beam"", :valid_pokemons=>[""Poliwag"", ""Poliwhirl"", ""Poliwrath"", ""Tentacool"", ""Tentacruel"", ""Krabby"", ""Kingler"", ""Horsea"", ""Seadra"", ""Staryu"", ""Poliwag"", ""Poliwhirl"", ""Poliwrath"", ""Shellder"", ""Cloyster"", ""Omanyte"", ""Omastar"", ""Kabuto"", ""Kabutops""]}"
+"{:name=>""Scald"", :valid_pokemons=>[""Squirtle"", ""Wartortle"", ""Blastoise"", ""Psyduck"", ""Golduck"", ""Poliwag"", ""Poliwhirl"", ""Poliwrath"", ""Tentacool"", ""Tentacruel"", ""Slowpoke"", ""Slowbro"", ""Krabby"", ""Kingler"", ""Horsea"", ""Seadra"", ""Goldeen"", ""Seaking"", ""Staryu"", ""Starmie"", ""Gyarados"", ""Vaporeon"", ""Omanyte"", ""Omastar"", ""Kabuto"", ""Kabutops""]}"
+"{:name=>""Ice Punch"", :valid_pokemons=>[""Hitmonchan"", ""Jynx"", ""Abra"", ""Kadabra"", ""Alakazam"", ""Machop"", ""Machoke"", ""Machamp"", ""Gastly"", ""Haunter"", ""Gengar"", ""Drowzee"", ""Hypno"", ""Jynx"", ""Electabuzz"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Nidoqueen"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Psyduck"", ""Golduck"", ""Mankey"", ""Primeape"", ""Poliwhirl"", ""Poliwrath"", ""Abra"", ""Kadabra"", ""Alakazam"", ""Machop"", ""Machoke"", ""Machamp"", ""Slowbro"", ""Grimer"", ""Muk"", ""Gastly"", ""Haunter"", ""Gengar"", ""Drowzee"", ""Hypno"", ""Hitmonchan"", ""Lickitung"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Mr"", ""Jynx"", ""Electabuzz"", ""Snorlax"", ""Dragonite"", ""Mewtwo""]}"
+"{:name=>""Submission"", :valid_pokemons=>[""Poliwrath"", ""Machop"", ""Machoke"", ""Machamp"", ""Pinsir""]}"
+"{:name=>""Psyshock"", :valid_pokemons=>[""Drowzee"", ""Hypno"", ""Exeggutor"", ""Clefairy"", ""Clefable"", ""Ninetales"", ""Psyduck"", ""Golduck"", ""Abra"", ""Kadabra"", ""Alakazam"", ""Slowpoke"", ""Slowbro"", ""Drowzee"", ""Hypno"", ""Exeggutor"", ""Starmie"", ""Mr"", ""Jynx"", ""Porygon"", ""Mewtwo"", ""Porygon""]}"
+"{:name=>""Psycho Cut"", :valid_pokemons=>[""Kadabra"", ""Alakazam"", ""Mewtwo"", ""Drowzee"", ""Hypno""]}"
+"{:name=>""Bullet Punch"", :valid_pokemons=>[""Hitmonchan"", ""Machop"", ""Machoke"", ""Machamp"", ""Hitmonlee"", ""Hitmonchan""]}"
+"{:name=>""Leaf Blade"", :valid_pokemons=>[""Victreebel"", ""Farfetch""]}"
+"{:name=>""Blizzard"", :valid_pokemons=>[""Jynx"", ""Articuno"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Rattata"", ""Raticate"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Psyduck"", ""Golduck"", ""Poliwag"", ""Poliwhirl"", ""Poliwrath"", ""Tentacool"", ""Tentacruel"", ""Slowpoke"", ""Slowbro"", ""Seel"", ""Dewgong"", ""Shellder"", ""Cloyster"", ""Krabby"", ""Kingler"", ""Cubone"", ""Marowak"", ""Lickitung"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Horsea"", ""Seadra"", ""Goldeen"", ""Seaking"", ""Staryu"", ""Starmie"", ""Jynx"", ""Tauros"", ""Gyarados"", ""Lapras"", ""Vaporeon"", ""Porygon"", ""Omanyte"", ""Omastar"", ""Kabuto"", ""Kabutops"", ""Snorlax"", ""Articuno"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Mewtwo"", ""Porygon""]}"
+"{:name=>""Rock Throw"", :valid_pokemons=>[""Geodude"", ""Graveler"", ""Golem"", ""Onix""]}"
+"{:name=>""Ancient Power"", :valid_pokemons=>[""Tangela"", ""Omanyte"", ""Omastar"", ""Kabuto"", ""Kabutops"", ""Aerodactyl"", ""Articuno"", ""Zapdos"", ""Moltres"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Diglett"", ""Dugtrio"", ""Krabby"", ""Kingler"", ""Exeggcute"", ""Exeggutor"", ""Cubone"", ""Marowak"", ""Lapras"", ""Geodude"", ""Graveler"", ""Golem"", ""Onix"", ""Rhyhorn"", ""Rhydon""]}"
+"{:name=>""Magnet Bomb"", :valid_pokemons=>[""Magnemite"", ""Magneton""]}"
+"{:name=>""Cut"", :valid_pokemons=>[""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Beedrill"", ""Rattata"", ""Raticate"", ""Sandshrew"", ""Sandslash"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Oddish"", ""Gloom"", ""Vileplume"", ""Paras"", ""Parasect"", ""Diglett"", ""Dugtrio"", ""Meowth"", ""Persian"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Tentacool"", ""Tentacruel"", ""Farfetch"", ""Krabby"", ""Kingler"", ""Lickitung"", ""Rhydon"", ""Tangela"", ""Kangaskhan"", ""Scyther"", ""Pinsir"", ""Kabutops"", ""Dragonite""]}"
+"{:name=>""Swift"", :valid_pokemons=>[""Sandshrew"", ""Sandslash"", ""Zubat"", ""Golbat"", ""Persian"", ""Voltorb"", ""Electrode"", ""Staryu"", ""Starmie"", ""Electabuzz"", ""Eevee"", ""Mewtwo"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Butterfree"", ""Beedrill"", ""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Rattata"", ""Raticate"", ""Spearow"", ""Fearow"", ""Pikachu"", ""Raichu"", ""Vulpix"", ""Ninetales"", ""Venonat"", ""Venomoth"", ""Meowth"", ""Psyduck"", ""Golduck"", ""Mankey"", ""Primeape"", ""Growlithe"", ""Arcanine"", ""Ponyta"", ""Rapidash"", ""Slowpoke"", ""Slowbro"", ""Magnemite"", ""Magneton"", ""Farfetch"", ""Doduo"", ""Dodrio"", ""Shellder"", ""Cloyster"", ""Hitmonlee"", ""Hitmonchan"", ""Horsea"", ""Seadra"", ""Goldeen"", ""Seaking"", ""Scyther"", ""Porygon"", ""Aerodactyl"", ""Articuno"", ""Zapdos"", ""Moltres"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Porygon""]}"
+"{:name=>""Ice Shard"", :valid_pokemons=>[""Seel"", ""Dewgong"", ""Shellder"", ""Lapras"", ""Articuno""]}"
+"{:name=>""Icy Wind"", :valid_pokemons=>[""Seel"", ""Dewgong"", ""Dewgong"", ""Mr"", ""Kabuto"", ""Kabutops"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Rattata"", ""Raticate"", ""Nidoqueen"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Meowth"", ""Persian"", ""Psyduck"", ""Golduck"", ""Poliwag"", ""Poliwhirl"", ""Poliwrath"", ""Tentacool"", ""Tentacruel"", ""Slowpoke"", ""Slowbro"", ""Seel"", ""Dewgong"", ""Shellder"", ""Cloyster"", ""Gastly"", ""Haunter"", ""Gengar"", ""Krabby"", ""Kingler"", ""Cubone"", ""Marowak"", ""Lickitung"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Horsea"", ""Seadra"", ""Goldeen"", ""Seaking"", ""Staryu"", ""Starmie"", ""Mr"", ""Jynx"", ""Tauros"", ""Gyarados"", ""Lapras"", ""Vaporeon"", ""Porygon"", ""Omanyte"", ""Omastar"", ""Kabuto"", ""Kabutops"", ""Snorlax"", ""Articuno"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Mewtwo"", ""Porygon""]}"
+"{:name=>""Frost Breath"", :valid_pokemons=>[""Dewgong"", ""Cloyster"", ""Jynx"", ""Lapras"", ""Articuno"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Oddish"", ""Gloom"", ""Vileplume"", ""Paras"", ""Parasect"", ""Bellsprout"", ""Weepinbell"", ""Victreebel"", ""Geodude"", ""Graveler"", ""Golem"", ""Onix"", ""Exeggcute"", ""Exeggutor"", ""Tangela"", ""Kabutops""]}"
+"{:name=>""Mud-Slap"", :valid_pokemons=>[""Diglett"", ""Dugtrio"", ""Grimer"", ""Muk"", ""Muk"", ""Farfetch"", ""Goldeen"", ""Seaking"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Pidgey"", ""Pidgeotto"", ""Pidgeot"", ""Rattata"", ""Raticate"", ""Spearow"", ""Fearow"", ""Pikachu"", ""Raichu"", ""Sandshrew"", ""Sandslash"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Jigglypuff"", ""Wigglytuff"", ""Meowth"", ""Persian"", ""Psyduck"", ""Golduck"", ""Mankey"", ""Primeape"", ""Growlithe"", ""Arcanine"", ""Poliwhirl"", ""Poliwrath"", ""Machop"", ""Machoke"", ""Machamp"", ""Geodude"", ""Graveler"", ""Golem"", ""Slowpoke"", ""Slowbro"", ""Doduo"", ""Dodrio"", ""Onix"", ""Krabby"", ""Kingler"", ""Cubone"", ""Marowak"", ""Hitmonlee"", ""Hitmonchan"", ""Lickitung"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Kangaskhan"", ""Mr"", ""Jynx"", ""Electabuzz"", ""Magmar"", ""Eevee"", ""Vaporeon"", ""Jolteon"", ""Flareon"", ""Kabuto"", ""Kabutops"", ""Snorlax"", ""Articuno"", ""Zapdos"", ""Moltres"", ""Dragonite"", ""Mewtwo""]}"
+"{:name=>""Sludge"", :valid_pokemons=>[""Grimer"", ""Muk"", ""Koffing"", ""Weezing"", ""Bulbasaur"", ""Ivysaur"", ""Venusaur""]}"
+"{:name=>""Lick"", :valid_pokemons=>[""Gastly"", ""Haunter"", ""Gengar"", ""Lickitung"", ""Jynx"", ""Jynx"", ""Snorlax"", ""Seel"", ""Dewgong"", ""Grimer"", ""Muk"", ""Snorlax""]}"
+"{:name=>""Shadow Claw"", :valid_pokemons=>[""Charizard"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Sandshrew"", ""Sandslash"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Diglett"", ""Dugtrio"", ""Meowth"", ""Persian"", ""Psyduck"", ""Golduck"", ""Haunter"", ""Gengar"", ""Rhydon"", ""Kangaskhan""]}"
+"{:name=>""Iron Head"", :valid_pokemons=>[""Aerodactyl"", ""Aerodactyl"", ""Cubone"", ""Marowak"", ""Arcanine"", ""Golem"", ""Onix"", ""Cubone"", ""Marowak"", ""Tauros"", ""Gyarados"", ""Lapras"", ""Aerodactyl"", ""Snorlax"", ""Dragonite""]}"
+"{:name=>""Vice Grip"", :valid_pokemons=>[""Krabby"", ""Kingler"", ""Kingler"", ""Pinsir""]}"
+"{:name=>""Rock Smash"", :valid_pokemons=>[""Bulbasaur"", ""Ivysaur"", ""Venusaur"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Beedrill"", ""Rattata"", ""Raticate"", ""Pikachu"", ""Raichu"", ""Sandshrew"", ""Sandslash"", ""Nidoran"", ""Nidorina"", ""Nidoqueen"", ""Nidoran"", ""Nidorino"", ""Nidoking"", ""Clefairy"", ""Clefable"", ""Paras"", ""Parasect"", ""Diglett"", ""Dugtrio"", ""Psyduck"", ""Golduck"", ""Mankey"", ""Primeape"", ""Growlithe"", ""Arcanine"", ""Poliwhirl"", ""Poliwrath"", ""Machop"", ""Machoke"", ""Machamp"", ""Geodude"", ""Graveler"", ""Golem"", ""Slowbro"", ""Muk"", ""Gengar"", ""Onix"", ""Krabby"", ""Kingler"", ""Cubone"", ""Marowak"", ""Hitmonlee"", ""Hitmonchan"", ""Lickitung"", ""Rhyhorn"", ""Rhydon"", ""Chansey"", ""Tangela"", ""Kangaskhan"", ""Scyther"", ""Electabuzz"", ""Magmar"", ""Pinsir"", ""Tauros"", ""Gyarados"", ""Lapras"", ""Vaporeon"", ""Jolteon"", ""Flareon"", ""Omanyte"", ""Omastar"", ""Kabuto"", ""Kabutops"", ""Aerodactyl"", ""Snorlax"", ""Articuno"", ""Zapdos"", ""Moltres"", ""Dragonite"", ""Mewtwo"", ""Zygarde""]}"
+"{:name=>""Bone Club"", :valid_pokemons=>[""Cubone"", ""Marowak"", ""Marowak""]}"
+"{:name=>""Stomp"", :valid_pokemons=>[""Ponyta"", ""Rapidash"", ""Krabby"", ""Kingler"", ""Exeggutor"", ""Lickitung"", ""Rhyhorn"", ""Rhydon"", ""Slowpoke"", ""Slowbro"", ""Kangaskhan""]}"
+"{:name=>""Dragon Pulse"", :valid_pokemons=>[""Horsea"", ""Seadra"", ""Zygarde"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Lapras"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Charmander"", ""Charmeleon"", ""Charizard"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Nidoqueen"", ""Nidoking"", ""Arcanine"", ""Onix"", ""Rhyhorn"", ""Rhydon"", ""Horsea"", ""Seadra"", ""Gyarados"", ""Lapras"", ""Aerodactyl"", ""Dratini"", ""Dragonair"", ""Dragonite"", ""Zygarde""]}"
+"{:name=>""Dragon Breath"", :valid_pokemons=>[""Onix"", ""Zygarde"", ""Horsea"", ""Seadra"", ""Aerodactyl"", ""Dratini"", ""Dragonair"", ""Dragonite""]}"
+"{:name=>""Draining Kiss"", :valid_pokemons=>[""Jynx""]}"
+"{:name=>""Splash"", :valid_pokemons=>[""Magikarp"", ""Clefairy"", ""Clefable"", ""Poliwag"", ""Poliwhirl"", ""Poliwrath"", ""Horsea"", ""Seadra""]}"
+"{:name=>""Brine"", :valid_pokemons=>[""Tentacool"", ""Tentacruel"", ""Seel"", ""Dewgong"", ""Shellder"", ""Krabby"", ""Kingler"", ""Horsea"", ""Seadra"", ""Staryu"", ""Lapras"", ""Omanyte"", ""Omastar"", ""Squirtle"", ""Wartortle"", ""Blastoise"", ""Psyduck"", ""Golduck"", ""Slowpoke"", ""Slowbro"", ""Gyarados"", ""Vaporeon"", ""Kabuto"", ""Kabutops""]}"
