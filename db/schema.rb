@@ -10,10 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160729045223) do
+ActiveRecord::Schema.define(version: 20160729144523) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "move_pokemons", id: false, force: :cascade do |t|
+    t.integer "pokemon_id"
+    t.integer "move_id"
+  end
 
   create_table "moves", force: :cascade do |t|
     t.string   "name",        null: false
@@ -24,6 +29,16 @@ ActiveRecord::Schema.define(version: 20160729045223) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["type_id"], name: "index_moves_on_type_id", using: :btree
+  end
+
+  create_table "moves_pokemons", id: false, force: :cascade do |t|
+    t.integer "move_id",    null: false
+    t.integer "pokemon_id", null: false
+  end
+
+  create_table "pokemon_types", id: false, force: :cascade do |t|
+    t.integer "pokemon_id"
+    t.integer "type_id"
   end
 
   create_table "pokemons", force: :cascade do |t|
