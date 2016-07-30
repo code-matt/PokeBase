@@ -7,7 +7,7 @@ describe Pokemon do
       it "should be valid" do
         pika = FactoryGirl.build(:pikachu)
 
-        pika.should be_valid
+        expect(pika).to be_valid
       end
     end
   end
