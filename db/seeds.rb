@@ -6,18 +6,21 @@ def seed_all_the_things!
   data = JSON.parse(file)
   scan_types(data)
   scan_moves(data)
-  pokemon = scan_pokemons(data)
+  scan_pokemons(data)
 end
 
 ######Types
 def scan_types(data)
   typesarray = data["TypeScalarArray"]
   data["PokemonTypes"].each do |type|
+    name = type["TemplateId"].split('_')[2].downcase.capitalize
     Type.create(
       poke_type_id: typesarray.find_index(type["TemplateId"]),
-      name: type["TemplateId"].split('_')[2].downcase.capitalize,
+      name: name,
       attack_scalar: type["TypeEffective"]["AttackScalar"]
     )
+
+    "Seeding type: #{name}"
   end
 end
 
@@ -52,7 +55,7 @@ def scan_moves(data)
       critical_chance: stats[:critical_chance],
       type: type.first
     )
-    puts "Seeding #{m.name}"
+    puts "Seeding move: #{m.name}"
   end
 
 end
@@ -95,6 +98,7 @@ def scan_pokemons(data)
         move: Move.where(poke_move_id: move).first
       )
     end
+    puts "Seeding pokemon: #{pokemon_data[:name]}"
   end
 end
 
@@ -102,7 +106,7 @@ def get_pokemon_types(pokemon)
   types = []
   types << pokemon["Pokemon"]["Type1"].split('_')[2].downcase.capitalize
   types << pokemon["Pokemon"]["Type2"].split('_')[2].downcase.capitalize if pokemon["Pokemon"]["Type2"] != nil
-  types.compact
+  types
 end
 
 def parse_pokemon_uniqueid_info(str)
