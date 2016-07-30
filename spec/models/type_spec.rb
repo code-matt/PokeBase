@@ -6,7 +6,7 @@ describe Type do
     it "should be valid" do
       physical_type = FactoryGirl.build(:physical)
 
-      physical_type.should be_valid
+      expect(physical_type).to be_valid
     end
   end
 end

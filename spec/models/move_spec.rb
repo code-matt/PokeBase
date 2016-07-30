@@ -5,11 +5,11 @@ describe Move do
   describe "creation" do
     it "should be valid" do
       quick_attack = FactoryGirl.build(:quick_attack)
-      quick_attack.should be_valid
+      expect(quick_attack).to be_valid
     end
     it "has a physical type" do
       quick_attack = FactoryGirl.build(:quick_attack)
-      quick_attack.type.name.should eq("Physical")
+      expect(quick_attack.type.name).to eq("Physical")
     end
   end
 end
