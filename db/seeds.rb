@@ -1,31 +1,30 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require 'csv'
+require 'json'
+require 'pry'
 
-type = Type.create(name: "Physical")
+def seed_all_the_things!
+  # CSV.foreach("#{Rails.root}/db/pokemon_data.csv") do |pokemon|
+  #   Pokemon.create(
+  #     poke_id: pokemon[0],
+  #     name: pokemon[1],
+  #     stamina: pokemon[4],
+  #     attack: pokemon[5],
+  #     defence: pokemon[6],
+  #     description: "placeholder for description",
+  #     image: "placeholder for image"
+  #   )
+  # end
+  file = File.read('GAME_MASTER_v0_1.decoded.categorized.json')
+  data = JSON.parse(file)
+  pokemon = scan_pokemons(data)
+  moves = scan_moves(data)
+  types = scan_types(data)
+  binding.pry
+end
 
-move = Move.create(
-  name: "Quick Attack",
-  attack: 33,
-  description: "Some attack",
-  special: true,
-  type: type
-)
+def scan_pokemons(data)
+{
 
-squirtle  = Pokemon.create(
-  name: "Squirtle",
-  stamina: 10,
-  attack: 25,
-  defence: 25,
-  description: "this is the description",
-  image: "asdf",
-  poke_id: 3
-)
+}
 
-join = MovePokemon.create(pokemon_id: squirtle.id, move_id: move.id)
-
-join2 = PokemonType.create(pokemon_id: squirtle.id, type_id: type.id)
+seed_all_the_things!

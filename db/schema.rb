@@ -31,11 +31,6 @@ ActiveRecord::Schema.define(version: 20160729144523) do
     t.index ["type_id"], name: "index_moves_on_type_id", using: :btree
   end
 
-  create_table "moves_pokemons", id: false, force: :cascade do |t|
-    t.integer "move_id",    null: false
-    t.integer "pokemon_id", null: false
-  end
-
   create_table "pokemon_types", id: false, force: :cascade do |t|
     t.integer "pokemon_id"
     t.integer "type_id"
