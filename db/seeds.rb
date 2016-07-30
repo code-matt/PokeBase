@@ -4,9 +4,9 @@ require 'json'
 def seed_all_the_things!
   file = File.read("#{Rails.root}/db/GAME_MASTER_v0_1.decoded.categorized.json")
   data = JSON.parse(file)
-  # scan_types(data)
+  scan_types(data)
   scan_moves(data)
-  # pokemon = scan_pokemons(data)
+  pokemon = scan_pokemons(data)
 end
 
 ######Types
@@ -24,11 +24,35 @@ end
 #######Moves
 def scan_moves(data)
   typesarray = data["TypeScalarArray"]
+  col_hash = {
+    power: "Power",
+    energy_cost: "EnergyDelta",
+    accuracy_chance: "AccuracyChance",
+    min_level: "TrainerLevelMin",
+    max_level: "TrainerLevelMax"
+  }
 
   data["Moves"].each do |move|
     id_and_name = parse_move_uniqueid_info(move["TemplateId"])
     type = Type.where(name: move["Move"]["Type"].split('_')[2].downcase.capitalize)
-    byebug
+    crit = move["Move"]["CriticalChance"].nil? ? 0: move["Move"]["CriticalChance"]
+    stats = Hash.new(0)
+    col_hash.each do |k,v|
+      stats[k] = move["Move"][v]
+    end
+    m = Move.create(
+      name: id_and_name[:name],
+      poke_move_id: id_and_name[:poke_move_id],
+      description: "placeholder description",
+      power: stats[:power],
+      energy_cost: stats[:energy_cost],
+      accuracy_chance: stats[:accuracy_chance],
+      min_level: stats[:min_level],
+      max_level: stats[:max_level],
+      critical_chance: stats[:critical_chance],
+      type: type.first
+    )
+    puts "Seeding #{m.name}"
   end
 
 end
@@ -46,12 +70,43 @@ def scan_pokemons(data)
     id_and_name = parse_pokemon_uniqueid_info(pokemon["Pokemon"]["UniqueId"])
     stats = parse_pokemon_stats_info(pokemon["Pokemon"]["Stats"])
     pokemon_data = id_and_name.merge(stats)
-
+    types = get_pokemon_types(pokemon)
+    pokemon_record = Pokemon.create(
+      name: pokemon_data[:name],
+      poke_id: pokemon_data[:poke_id],
+      stamina: pokemon_data[:stamina],
+      attack: pokemon_data[:attack],
+      defence: pokemon_data[:defence],
+      description: "placeholder description",
+      image: "placeholder image"
+    )
+    types.each do |type|
+      jt = PokemonType.create(
+        pokemon: pokemon_record,
+        type: Type.where(name: type).first
+      )
+    end
+    moves = []
+    moves << pokemon["Pokemon"]["QuickMoves"]
+    moves << pokemon["Pokemon"]["CinematicMoves"]
+    moves.flatten.each do |move|
+      jt = MovePokemon.create(
+        pokemon: pokemon_record,
+        move: Move.where(poke_move_id: move).first
+      )
+    end
   end
 end
 
+def get_pokemon_types(pokemon)
+  types = []
+  types << pokemon["Pokemon"]["Type1"].split('_')[2].downcase.capitalize
+  types << pokemon["Pokemon"]["Type2"].split('_')[2].downcase.capitalize if pokemon["Pokemon"]["Type2"] != nil
+  types.compact
+end
+
 def parse_pokemon_uniqueid_info(str)
-  poke_ = str.split('_').first.delete("V0")
+  poke_id = str.split('_').first.delete("V0")
   name = str.split('_')[2].downcase.capitalize
   {name: name, poke_id: poke_id}
 end
