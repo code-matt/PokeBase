@@ -20,7 +20,7 @@ def scan_types(data)
       attack_scalar: type["TypeEffective"]["AttackScalar"]
     )
 
-    "Seeding type: #{name}"
+    puts "Seeding type: #{name}"
   end
 end
 
@@ -69,14 +69,15 @@ end
 ######Pokemon
 
 def scan_pokemons(data)
-  data["Pokemon"].each do |pokemon|
+  data["Pokemon"].each_with_index do |pokemon,i|
     id_and_name = parse_pokemon_uniqueid_info(pokemon["Pokemon"]["UniqueId"])
     stats = parse_pokemon_stats_info(pokemon["Pokemon"]["Stats"])
     pokemon_data = id_and_name.merge(stats)
     types = get_pokemon_types(pokemon)
+    puts i
     pokemon_record = Pokemon.create(
+      poke_id: i+1,
       name: pokemon_data[:name],
-      poke_id: pokemon_data[:poke_id],
       stamina: pokemon_data[:stamina],
       attack: pokemon_data[:attack],
       defence: pokemon_data[:defence],
