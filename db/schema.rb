@@ -21,13 +21,17 @@ ActiveRecord::Schema.define(version: 20160730055223) do
   end
 
   create_table "moves", force: :cascade do |t|
-    t.string   "name",         null: false
-    t.string   "description",  null: false
-    t.integer  "attack",       null: false
-    t.boolean  "special",      null: false
+    t.string   "name",            null: false
+    t.string   "description",     null: false
+    t.integer  "power",           null: false
+    t.integer  "energy_cost",     null: false
+    t.integer  "accuracy_chance", null: false
+    t.integer  "min_level",       null: false
+    t.integer  "max_level",       null: false
+    t.integer  "critical_chance", null: false
     t.integer  "type_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
     t.integer  "poke_move_id"
     t.index ["poke_move_id"], name: "index_moves_on_poke_move_id", using: :btree
     t.index ["type_id"], name: "index_moves_on_type_id", using: :btree

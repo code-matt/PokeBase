@@ -7,6 +7,8 @@ describe Move do
       quick_attack = FactoryGirl.build(:quick_attack)
       expect(quick_attack).to be_valid
     end
+  end
+  describe "relations" do
     it "has a physical type" do
       quick_attack = FactoryGirl.build(:quick_attack)
       expect(quick_attack.type.name).to eq("Physical")
