@@ -10,6 +10,6 @@ class Move < ActiveRecord::Base
   after_initialize :init
 
   def init
-    self.power  ||= 0.0 
+    self.power  ||= 0
   end
 end
