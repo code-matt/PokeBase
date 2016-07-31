@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   end
 
   resources :pokemons
-
+  resources :home, only: [:index]
+  get 'home/data', defaults: { format: 'json' }
 end
