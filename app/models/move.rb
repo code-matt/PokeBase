@@ -5,7 +5,7 @@ class Move < ActiveRecord::Base
   belongs_to :type
 
   has_many :move_pokemons
-  has_many :pokemon, through: :move_pokemons
+  has_many :pokemons, through: :move_pokemons
 
   after_initialize :init
 

@@ -1,5 +1,5 @@
-class Api::V1::PokemonsController < ActionController::Base
-  VALID_QUERIES = ['name','attack','stamina','defence','type']
+class Api::V1::MovesController < ActionController::Base
+  VALID_QUERIES = ['name','power','min_trainer_level','type','pokemon']
 
   def index
     unless validate_queries(request.GET.keys)
@@ -11,30 +11,28 @@ class Api::V1::PokemonsController < ActionController::Base
   end
 
   def build_result(request)
-    result = Pokemon.all
+    result = Move.all
     request.GET.each do |query,value|
       value = sanitize_value(value)
       case query
         when "name"
           result = result.where("name ILIKE ?","%#{value}%")
-        when "attack"
-          result = result.where("attack >= ?","#{value}")
-        when "defence"
-          result = result.where("defence >= ?","#{value}")
-        when "stamina"
-          result = result.where("stamina >= ?","#{value}")
+        when "power"
+          result = result.where("power >= ?","#{value}")
+        when "min_trainer_level"
+          result = result.where("min_level >= ?","#{value}")
         when "type"
           result = result.where("type ILIKE ?","%#{value}%")
       end
     end
-    response = {pokemons: []}
-    result.each do |pokemon|
-      moves = pokemon.moves
-      types = pokemon.types
-      pokemon = pokemon.as_json
-      pokemon[:moves] = moves
-      pokemon[:types] = types
-      response[:pokemons] << pokemon
+    response = {moves: []}
+    result.each do |move|
+      pokemons = move.pokemons
+      type = move.type
+      move = move.as_json
+      move[:pokemons] = pokemons
+      move[:type] = type
+      response[:moves] << move
     end
     response
   end
