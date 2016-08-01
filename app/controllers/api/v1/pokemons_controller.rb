@@ -1,5 +1,5 @@
 class Api::V1::PokemonsController < ActionController::Base
-  VALID_QUERIES = ['name','attack','stamina','defence','min_trainer_level','type']
+  VALID_QUERIES = ['name','attack','stamina','defence','type']
 
   def index
     unless validate_queries(request.GET.keys)
@@ -7,27 +7,33 @@ class Api::V1::PokemonsController < ActionController::Base
       return
     end
 
-    #still need to sanitize this and also
-    #change name to LIKE instead of ==
-    render json: Pokemon.where(build_result(request))
+    render json: build_result(request)
   end
 
   def build_result(request)
-    query_str = ""
-    i = 0
+
+    result = Pokemon.all
     request.GET.each do |query,value|
+      value = sanitize_value(value)
       i += 1
       case query
         when "name"
-          query_str += "name = '#{value}'"
+          result = result.where("name ILIKE ?","%#{value}%")
         when "attack"
-          query_str += "attack > #{value}"
+          result = result.where("attack >= ?","#{value}")
         when "defence"
-          query_str += "defence > #{value}"
+          result = result.where("defence >= ?","#{value}")
+        when "stamina"
+          result = result.where("stamina >= ?","#{value}")
+        when "type"
+          result = result.where("type ILIKE ?","%#{value}%")
       end
-      query_str += " AND " unless i == request.GET.keys.length
     end
-    query_str
+    result
+  end
+
+  def sanitize_value(value)
+    value.parameterize
   end
 
   def validate_queries(queries)

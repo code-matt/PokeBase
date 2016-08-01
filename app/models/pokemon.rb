@@ -7,4 +7,7 @@ class Pokemon < ActiveRecord::Base
 
   has_many :move_pokemons
   has_many :moves, through: :move_pokemons
+
+  def self.search(queries)
+  end
 end
