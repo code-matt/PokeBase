@@ -1,5 +1,5 @@
 class Api::V1::MovesController < ActionController::Base
-  VALID_QUERIES = ['name','power','min_trainer_level','type','pokemon']
+  VALID_QUERIES = ['name','power','min_trainer_level','type']
 
   def index
     unless validate_queries(request.GET.keys)
@@ -7,10 +7,10 @@ class Api::V1::MovesController < ActionController::Base
       return
     end
 
-    render json: build_result(request)
+    render json: build_response(request)
   end
 
-  def build_result(request)
+  def build_response(request)
     result = Move.all
     request.GET.each do |query,value|
       value = sanitize_value(value)
@@ -25,8 +25,12 @@ class Api::V1::MovesController < ActionController::Base
           result = result.where("type ILIKE ?","%#{value}%")
       end
     end
+    add_join_data(result)
+  end
+
+  def add_join_data(moves_result)
     response = {moves: []}
-    result.each do |move|
+    moves_result.each do |move|
       pokemons = move.pokemons
       type = move.type
       move = move.as_json
