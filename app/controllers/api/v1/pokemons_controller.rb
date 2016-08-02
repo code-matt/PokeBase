@@ -1,5 +1,5 @@
 class Api::V1::PokemonsController < ActionController::Base
-  VALID_QUERIES = ['name','attack','stamina','defence','type']
+  VALID_QUERIES = ['name','attack','stamina','defence']
 
   def index
     unless validate_queries(request.GET.keys)
@@ -23,9 +23,6 @@ class Api::V1::PokemonsController < ActionController::Base
           result = result.where("defence >= ?","#{value}")
         when "stamina"
           result = result.where("stamina >= ?","#{value}")
-        #type is broken right now
-        when "type"
-          result = result.where("type ILIKE ?","%#{value}%")
       end
     end
     add_join_data(result)

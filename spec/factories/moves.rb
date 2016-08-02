@@ -3,6 +3,11 @@ FactoryGirl.define do
       m.name "Quick Attack"
       m.description "The user lunges at the target at a speed that makes it almost invisible. It is sure to strike first."
       m.power 25
-      m.association :type, factory: :physical # expecting this to attach the user_id from factory :user as :primary contact_id in the school model
+      m.energy_cost -20
+      m.accuracy_chance 1
+      m.min_level 1
+      m.max_level 100
+      m.critical_chance 0
+      m.association :type, factory: :physical
     end
 end
