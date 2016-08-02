@@ -82,7 +82,7 @@ def scan_pokemons(data)
       attack: pokemon_data[:attack],
       defence: pokemon_data[:defence],
       description: "placeholder description",
-      image: "placeholder image"
+      image: "images/icons/#{i+1}.png"
     )
     types.each do |type|
       jt = PokemonType.create(
