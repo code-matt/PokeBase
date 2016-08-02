@@ -1,5 +1,5 @@
 class Api::V1::MovesController < ActionController::Base
-  VALID_QUERIES = ['name','power','min_trainer_level','type']
+  VALID_QUERIES = ['name','power','min_trainer_level']
 
   def index
     unless validate_queries(request.GET.keys)
@@ -21,8 +21,6 @@ class Api::V1::MovesController < ActionController::Base
           result = result.where("power >= ?","#{value}")
         when "min_trainer_level"
           result = result.where("min_level >= ?","#{value}")
-        when "type"
-          result = result.where("type ILIKE ?","%#{value}%")
       end
     end
     add_join_data(result)
