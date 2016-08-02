@@ -7,10 +7,10 @@ class Api::V1::PokemonsController < ActionController::Base
       return
     end
 
-    render json: build_result(request)
+    render json: build_response(request)
   end
 
-  def build_result(request)
+  def build_response(request)
     result = Pokemon.all
     request.GET.each do |query,value|
       value = sanitize_value(value)
@@ -23,12 +23,17 @@ class Api::V1::PokemonsController < ActionController::Base
           result = result.where("defence >= ?","#{value}")
         when "stamina"
           result = result.where("stamina >= ?","#{value}")
+        #type is broken right now
         when "type"
           result = result.where("type ILIKE ?","%#{value}%")
       end
     end
+    add_join_data(result)
+  end
+
+  def add_join_data(pokemon_result)
     response = {pokemons: []}
-    result.each do |pokemon|
+    pokemon_result.each do |pokemon|
       moves = pokemon.moves
       types = pokemon.types
       pokemon = pokemon.as_json
