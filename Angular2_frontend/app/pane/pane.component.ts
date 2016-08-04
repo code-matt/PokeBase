@@ -1,6 +1,8 @@
 import {Component, Input} from '@angular/core'
+import {PokemonService} from '../pokemon.service';
 
 @Component({
+  providers: [PokemonService],
   selector: `pane`,
   template: `
     {{pokemon}}
@@ -20,6 +22,8 @@ import {Component, Input} from '@angular/core'
   `
 })
 export class PaneComponent{
+  constructor(private _pokemonService: PokemonService) {
+  }
   @Input() pokemon = "Empty";
 
   load_data(pokemon: any)

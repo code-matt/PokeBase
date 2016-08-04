@@ -17,15 +17,15 @@ require('rxjs/add/operator/distinctUntilChanged');
 require('rxjs/add/operator/switchMap');
 var http_1 = require('@angular/http');
 var SearchComponent = (function () {
-    function SearchComponent(pokemonService) {
+    function SearchComponent(_pokemonService) {
         var _this = this;
-        this.pokemonService = pokemonService;
+        this._pokemonService = _pokemonService;
         this.load = new core_1.EventEmitter();
         this.search = new common_1.Control();
         this.focus = false;
         this.search.valueChanges
             .debounceTime(500)
-            .subscribe(function (s) { return pokemonService.search(s)
+            .subscribe(function (s) { return _pokemonService.search(s)
             .subscribe(function (data) { return _this.items = data.pokemons; }); });
     }
     SearchComponent.prototype.ngOnChanges = function (changes) {
@@ -37,7 +37,7 @@ var SearchComponent = (function () {
         this.focus = !this.focus;
     };
     SearchComponent.prototype.load_pokemon = function (event, pannel) {
-        name = $(event.target.parentNode).find('#pokemon_name').text();
+        name = jQuery(event.target.parentNode).find('#pokemon_name').text();
         this.load.emit({
             pokemon: name,
             pannel: pannel

@@ -43,17 +43,17 @@ export class SearchComponent implements OnChanges {
   items: any;
   search = new Control();
   focus: boolean = false;
-  constructor(private pokemonService: PokemonService) {
+  constructor(private _pokemonService: PokemonService) {
     this.search.valueChanges
       .debounceTime(500)
-      .subscribe(s => pokemonService.search(s)
+      .subscribe(s => _pokemonService.search(s)
       .subscribe(data => this.items = data.pokemons))
   }
   toggleFocus(){
     this.focus = !this.focus
   }
   load_pokemon(event: any,pannel: any){
-    name = $(event.target.parentNode).find('#pokemon_name').text();
+    name = jQuery(event.target.parentNode).find('#pokemon_name').text();
     this.load.emit({
       pokemon: name,
       pannel: pannel

@@ -9,8 +9,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var pokemon_service_1 = require('../pokemon.service');
 var PaneComponent = (function () {
-    function PaneComponent() {
+    function PaneComponent(_pokemonService) {
+        this._pokemonService = _pokemonService;
         this.pokemon = "Empty";
     }
     PaneComponent.prototype.load_data = function (pokemon) {
@@ -22,10 +24,11 @@ var PaneComponent = (function () {
     ], PaneComponent.prototype, "pokemon", void 0);
     PaneComponent = __decorate([
         core_1.Component({
+            providers: [pokemon_service_1.PokemonService],
             selector: "pane",
             template: "\n    {{pokemon}}\n    <div class=\"row\">\n      <div class=\"col-md-5\">\n        three.js 3D model component\n      </div>\n      <div class=\"col-md-7\">\n        stats component\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        d3.js bargraph of moves component\n      </div>\n    </div>\n  "
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [pokemon_service_1.PokemonService])
     ], PaneComponent);
     return PaneComponent;
 }());

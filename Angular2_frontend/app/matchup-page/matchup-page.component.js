@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var search_component_1 = require('../search/search.component');
 var pane_component_1 = require('../pane/pane.component');
+var http_1 = require('@angular/http');
 var MatchupPageComponent = (function () {
     function MatchupPageComponent() {
         this.emptyString = "Empty";
@@ -35,6 +36,7 @@ var MatchupPageComponent = (function () {
         core_1.Component({
             selector: 'matchup-page',
             directives: [search_component_1.SearchComponent, pane_component_1.PaneComponent],
+            providers: [http_1.HTTP_PROVIDERS],
             template: "\n    <div class=\"row\">\n      <div class=\"col-md-6 col-md-offset-3\">\n        <search (load)=\"load_pokemon($event)\"></search>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12 col-centered\">\n        <div class=\"col-md-6 col-sm-12\">\n          <pane #leftPane [pokemon]=\"emptyString\"></pane>\n        </div>\n        <div class=\"col-md-6 col-sm-12\">\n          <pane #rightPane [pokemon]=\"emptyString\"></pane>\n        </div>\n      </div>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])

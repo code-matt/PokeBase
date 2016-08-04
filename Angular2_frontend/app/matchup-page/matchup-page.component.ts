@@ -1,10 +1,12 @@
 import {Component,ViewChild} from '@angular/core'
 import { SearchComponent } from '../search/search.component'
 import { PaneComponent } from '../pane/pane.component'
+import {HTTP_PROVIDERS} from '@angular/http'
 
 @Component({
   selector: 'matchup-page',
   directives: [SearchComponent,PaneComponent],
+  providers: [HTTP_PROVIDERS],
   template: `
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
