@@ -16,10 +16,10 @@ import {HTTP_PROVIDERS} from '@angular/http'
     <div class="row">
       <div class="col-md-12 col-centered">
         <div class="col-md-6 col-sm-12">
-          <pane #leftPane [pokemon]="emptyString"></pane>
+          <pane #leftPane></pane>
         </div>
         <div class="col-md-6 col-sm-12">
-          <pane #rightPane [pokemon]="emptyString"></pane>
+          <pane #rightPane></pane>
         </div>
       </div>
     </div>
@@ -28,8 +28,6 @@ import {HTTP_PROVIDERS} from '@angular/http'
 export class MatchupPageComponent{
   @ViewChild('leftPane') leftPane: PaneComponent
   @ViewChild('rightPane') rightPane: PaneComponent
-
-  emptyString:string = "Empty";
 
   load_pokemon(evt: any)
   {

@@ -14,7 +14,6 @@ var pane_component_1 = require('../pane/pane.component');
 var http_1 = require('@angular/http');
 var MatchupPageComponent = (function () {
     function MatchupPageComponent() {
-        this.emptyString = "Empty";
     }
     MatchupPageComponent.prototype.load_pokemon = function (evt) {
         if (evt.pannel == "left") {
@@ -37,7 +36,7 @@ var MatchupPageComponent = (function () {
             selector: 'matchup-page',
             directives: [search_component_1.SearchComponent, pane_component_1.PaneComponent],
             providers: [http_1.HTTP_PROVIDERS],
-            template: "\n    <div class=\"row\">\n      <div class=\"col-md-6 col-md-offset-3\">\n        <search (load)=\"load_pokemon($event)\"></search>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12 col-centered\">\n        <div class=\"col-md-6 col-sm-12\">\n          <pane #leftPane [pokemon]=\"emptyString\"></pane>\n        </div>\n        <div class=\"col-md-6 col-sm-12\">\n          <pane #rightPane [pokemon]=\"emptyString\"></pane>\n        </div>\n      </div>\n    </div>\n  "
+            template: "\n    <div class=\"row\">\n      <div class=\"col-md-6 col-md-offset-3\">\n        <search (load)=\"load_pokemon($event)\"></search>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12 col-centered\">\n        <div class=\"col-md-6 col-sm-12\">\n          <pane #leftPane></pane>\n        </div>\n        <div class=\"col-md-6 col-sm-12\">\n          <pane #rightPane></pane>\n        </div>\n      </div>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], MatchupPageComponent);

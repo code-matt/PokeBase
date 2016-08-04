@@ -10,13 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var pokemon_service_1 = require('../pokemon.service');
+var stats_component_1 = require('./stats/stats.component');
+var three_component_1 = require('./three/three.component');
+var moves_graph_component_1 = require('./moves-graph/moves-graph.component');
 var PaneComponent = (function () {
     function PaneComponent(_pokemonService) {
         this._pokemonService = _pokemonService;
-        this.pokemon = "Empty";
+        this.pokemon = {};
     }
     PaneComponent.prototype.load_data = function (pokemon) {
+        var _this = this;
         console.log('loading data for ' + pokemon + '!');
+        this._pokemonService.search(pokemon)
+            .subscribe(function (res) { return _this.pokemon = res.pokemons[0]; }, function (error) { return console.log(error); });
     };
     __decorate([
         core_1.Input(), 
@@ -25,8 +31,9 @@ var PaneComponent = (function () {
     PaneComponent = __decorate([
         core_1.Component({
             providers: [pokemon_service_1.PokemonService],
+            directives: [stats_component_1.PokemonStatsComponent, three_component_1.PokemonModelComponent, moves_graph_component_1.MovesGraphComponent],
             selector: "pane",
-            template: "\n    {{pokemon}}\n    <div class=\"row\">\n      <div class=\"col-md-5\">\n        three.js 3D model component\n      </div>\n      <div class=\"col-md-7\">\n        stats component\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        d3.js bargraph of moves component\n      </div>\n    </div>\n  "
+            template: "\n    {{pokemon.name}}\n    <div class=\"row\">\n      <div class=\"col-md-5\">\n        <pokemon-model></pokemon-model>\n      </div>\n      <div class=\"col-md-7\">\n        <pokemon-stats></pokemon-stats>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <moves-graph></moves-graph>\n      </div>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [pokemon_service_1.PokemonService])
     ], PaneComponent);

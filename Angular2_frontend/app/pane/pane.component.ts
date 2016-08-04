@@ -1,22 +1,27 @@
 import {Component, Input} from '@angular/core'
+
 import {PokemonService} from '../pokemon.service';
+import {PokemonStatsComponent} from './stats/stats.component';
+import {PokemonModelComponent} from './three/three.component';
+import {MovesGraphComponent} from './moves-graph/moves-graph.component';
 
 @Component({
   providers: [PokemonService],
+  directives: [PokemonStatsComponent, PokemonModelComponent, MovesGraphComponent],
   selector: `pane`,
   template: `
-    {{pokemon}}
+    {{pokemon.name}}
     <div class="row">
       <div class="col-md-5">
-        three.js 3D model component
+        <pokemon-model></pokemon-model>
       </div>
       <div class="col-md-7">
-        stats component
+        <pokemon-stats></pokemon-stats>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        d3.js bargraph of moves component
+        <moves-graph></moves-graph>
       </div>
     </div>
   `
@@ -24,11 +29,14 @@ import {PokemonService} from '../pokemon.service';
 export class PaneComponent{
   constructor(private _pokemonService: PokemonService) {
   }
-  @Input() pokemon = "Empty";
+  @Input() pokemon = {};
 
   load_data(pokemon: any)
   {
     console.log('loading data for ' + pokemon +'!')
+    this._pokemonService.search(pokemon)
+      .subscribe(res => this.pokemon = res.pokemons[0],
+        error => console.log(error))
   }
 
 }
