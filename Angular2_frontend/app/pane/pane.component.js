@@ -11,11 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var PaneComponent = (function () {
     function PaneComponent() {
+        this.pokemon = "Empty";
     }
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], PaneComponent.prototype, "pokemon", void 0);
     PaneComponent = __decorate([
         core_1.Component({
             selector: "pane",
-            template: "\n    <div class=\"row\">\n      <div class=\"col-md-5\">\n        three.js 3D model component\n      </div>\n      <div class=\"col-md-7\">\n        stats component\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        d3.js bargraph of moves component\n      </div>\n    </div>\n  "
+            template: "\n    {{pokemon}}\n    <div class=\"row\">\n      <div class=\"col-md-5\">\n        three.js 3D model component\n      </div>\n      <div class=\"col-md-7\">\n        stats component\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        d3.js bargraph of moves component\n      </div>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], PaneComponent);

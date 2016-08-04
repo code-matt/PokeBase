@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { SearchComponent } from './search/search.component'
-import {PaneComponent} from './pane/pane.component'
+import { MatchupPageComponent } from './matchup-page/matchup-page.component'
+
 @Component({
     selector: 'my-app',
-    directives: [SearchComponent,PaneComponent],
+    directives: [MatchupPageComponent],
     template: `
       <div class="container-fluid">
       	<div class="row">
@@ -14,21 +14,7 @@ import {PaneComponent} from './pane/pane.component'
             </div>
       		</div>
       	</div>
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <search></search>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 col-centered">
-            <div class="col-md-6 col-sm-12">
-              <pane></pane>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <pane></pane>
-            </div>
-          </div>
-        </div>
+        <matchup-page></matchup-page>
       </div>
     `
 })

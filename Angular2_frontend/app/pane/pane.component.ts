@@ -1,8 +1,9 @@
-import {Component} from '@angular/core'
+import {Component, Input} from '@angular/core'
 
 @Component({
   selector: `pane`,
   template: `
+    {{pokemon}}
     <div class="row">
       <div class="col-md-5">
         three.js 3D model component
@@ -19,5 +20,6 @@ import {Component} from '@angular/core'
   `
 })
 export class PaneComponent{
+  @Input() pokemon = "Empty";
 
 }
