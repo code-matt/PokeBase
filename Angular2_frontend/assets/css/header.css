@@ -1,0 +1,15 @@
+.header {
+  background-color: #FFC90D;
+  height: 50px;
+  font-family: pokeFont;
+  font-size: 35px;
+  font-weight: bolder;
+  border-radius: 4px;
+}
+
+.header .nav{
+  float: right;
+  font-size: 0.5em;
+  position: relative;
+  top: 10px;
+}
