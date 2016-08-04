@@ -13,6 +13,9 @@ var PaneComponent = (function () {
     function PaneComponent() {
         this.pokemon = "Empty";
     }
+    PaneComponent.prototype.load_data = function (pokemon) {
+        console.log('loading data for ' + pokemon + '!');
+    };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Object)

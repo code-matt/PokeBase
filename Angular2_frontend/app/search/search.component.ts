@@ -1,5 +1,5 @@
 import {Control, FORM_DIRECTIVES} from '@angular/common';
-import {Component, Output, Input, EventEmitter} from '@angular/core';
+import {Component, Output, Input, EventEmitter, OnChanges, SimpleChange} from '@angular/core';
 import {Observable} from 'rxjs/Rx';
 import {PokemonService} from '../pokemon.service'
 import 'rxjs/add/operator/map';
@@ -20,19 +20,26 @@ import {HTTP_PROVIDERS} from '@angular/http'
         <span class="input-group-addon" id="pikagif"><img src="/assets/images/pikachu.gif" alt="@" height="20" /></span>
         <input [ngFormControl]="search" type="text" class="form-control" placeholder="Search by Pokemon name" aria-describedby="pikagif" (blur)="toggleFocus()" (focus)="toggleFocus()">
       </div>
-      <div *ngIf="focus">
+
         <div *ngFor="let item of items" class="search_result">
           <img src="http://localhost:8000/{{item.image}}" alt="@" height="40" width="40" />
-          {{item.name}}
-          <button type="button">Left</button>
-          <button type="button">Right</button>
+          <span id="pokemon_name">{{item.name}}</span>
+          <button type="button" (click)="load_pokemon($event,'left')">Left</button>
+          <button type="button" (click)="load_pokemon($event,'right')">Right</button>
         </div>
-      </div>
+
     </div>
   `
 })
 
-export class SearchComponent {
+export class SearchComponent implements OnChanges {
+
+  ngOnChanges(changes: {[propertyName: string]: SimpleChange}) {
+    {console.log('changed')}
+  }
+
+  @Output() load = new EventEmitter();
+
   items: any;
   search = new Control();
   focus: boolean = false;
@@ -44,5 +51,12 @@ export class SearchComponent {
   }
   toggleFocus(){
     this.focus = !this.focus
+  }
+  load_pokemon(event: any,pannel: any){
+    name = $(event.target.parentNode).find('#pokemon_name').text();
+    this.load.emit({
+      pokemon: name,
+      pannel: pannel
+    })
   }
 }

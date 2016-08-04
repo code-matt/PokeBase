@@ -22,4 +22,9 @@ import {Component, Input} from '@angular/core'
 export class PaneComponent{
   @Input() pokemon = "Empty";
 
+  load_data(pokemon: any)
+  {
+    console.log('loading data for ' + pokemon +'!')
+  }
+
 }

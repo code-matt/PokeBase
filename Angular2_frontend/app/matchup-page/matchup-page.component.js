@@ -15,11 +15,27 @@ var MatchupPageComponent = (function () {
     function MatchupPageComponent() {
         this.emptyString = "Empty";
     }
+    MatchupPageComponent.prototype.load_pokemon = function (evt) {
+        if (evt.pannel == "left") {
+            this.leftPane.load_data(evt.pokemon);
+        }
+        if (evt.pannel == "right") {
+            this.rightPane.load_data(evt.pokemon);
+        }
+    };
+    __decorate([
+        core_1.ViewChild('leftPane'), 
+        __metadata('design:type', pane_component_1.PaneComponent)
+    ], MatchupPageComponent.prototype, "leftPane", void 0);
+    __decorate([
+        core_1.ViewChild('rightPane'), 
+        __metadata('design:type', pane_component_1.PaneComponent)
+    ], MatchupPageComponent.prototype, "rightPane", void 0);
     MatchupPageComponent = __decorate([
         core_1.Component({
             selector: 'matchup-page',
             directives: [search_component_1.SearchComponent, pane_component_1.PaneComponent],
-            template: "\n    <div class=\"row\">\n      <div class=\"col-md-6 col-md-offset-3\">\n        <search></search>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12 col-centered\">\n        <div class=\"col-md-6 col-sm-12\">\n          <pane [pokemon]=\"emptyString\"></pane>\n        </div>\n        <div class=\"col-md-6 col-sm-12\">\n          <pane [pokemon]=\"emptyString\"></pane>\n        </div>\n      </div>\n    </div>\n  "
+            template: "\n    <div class=\"row\">\n      <div class=\"col-md-6 col-md-offset-3\">\n        <search (load)=\"load_pokemon($event)\"></search>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12 col-centered\">\n        <div class=\"col-md-6 col-sm-12\">\n          <pane #leftPane [pokemon]=\"emptyString\"></pane>\n        </div>\n        <div class=\"col-md-6 col-sm-12\">\n          <pane #rightPane [pokemon]=\"emptyString\"></pane>\n        </div>\n      </div>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], MatchupPageComponent);
