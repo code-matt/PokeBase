@@ -11,11 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var PokemonModelComponent = (function () {
     function PokemonModelComponent() {
+        this.pokemon = {};
     }
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], PokemonModelComponent.prototype, "pokemon", void 0);
     PokemonModelComponent = __decorate([
         core_1.Component({
             selector: "pokemon-model",
-            template: "\n    three.js pokemon model component\n  "
+            template: "\n    three.js pokemon model component {{pokemon.name}}\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], PokemonModelComponent);

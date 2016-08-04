@@ -22,18 +22,36 @@ var PaneComponent = (function () {
         var _this = this;
         console.log('loading data for ' + pokemon + '!');
         this._pokemonService.search(pokemon)
-            .subscribe(function (res) { return _this.pokemon = res.pokemons[0]; }, function (error) { return console.log(error); });
+            .subscribe(function (res) { return _this.set_pokemon(res.pokemons[0]); }, function (error) { return console.log(error); });
+    };
+    PaneComponent.prototype.set_pokemon = function (pokemon) {
+        this.pokemon = pokemon;
+        this.model.pokemon = this.pokemon;
+        this.stats.pokemon = this.pokemon;
+        this.graph.pokemon = this.pokemon;
     };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Object)
     ], PaneComponent.prototype, "pokemon", void 0);
+    __decorate([
+        core_1.ViewChild('model'), 
+        __metadata('design:type', three_component_1.PokemonModelComponent)
+    ], PaneComponent.prototype, "model", void 0);
+    __decorate([
+        core_1.ViewChild('stats'), 
+        __metadata('design:type', stats_component_1.PokemonStatsComponent)
+    ], PaneComponent.prototype, "stats", void 0);
+    __decorate([
+        core_1.ViewChild('graph'), 
+        __metadata('design:type', moves_graph_component_1.MovesGraphComponent)
+    ], PaneComponent.prototype, "graph", void 0);
     PaneComponent = __decorate([
         core_1.Component({
             providers: [pokemon_service_1.PokemonService],
             directives: [stats_component_1.PokemonStatsComponent, three_component_1.PokemonModelComponent, moves_graph_component_1.MovesGraphComponent],
             selector: "pane",
-            template: "\n    {{pokemon.name}}\n    <div class=\"row\">\n      <div class=\"col-md-5\">\n        <pokemon-model></pokemon-model>\n      </div>\n      <div class=\"col-md-7\">\n        <pokemon-stats></pokemon-stats>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <moves-graph></moves-graph>\n      </div>\n    </div>\n  "
+            template: "\n    {{pokemon.name}}\n    <div class=\"row\">\n      <div class=\"col-md-5\">\n        <pokemon-model #model></pokemon-model>\n      </div>\n      <div class=\"col-md-7\">\n        <pokemon-stats #stats></pokemon-stats>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <moves-graph #graph></moves-graph>\n      </div>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [pokemon_service_1.PokemonService])
     ], PaneComponent);

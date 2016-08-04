@@ -11,11 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var MovesGraphComponent = (function () {
     function MovesGraphComponent() {
+        this.pokemon = {};
     }
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], MovesGraphComponent.prototype, "pokemon", void 0);
     MovesGraphComponent = __decorate([
         core_1.Component({
             selector: "moves-graph",
-            template: "\n    d3.js bargraph of moves component\n  "
+            template: "\n    d3.js bargraph of moves component {{pokemon.name}}\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], MovesGraphComponent);

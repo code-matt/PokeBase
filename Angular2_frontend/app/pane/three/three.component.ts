@@ -1,12 +1,12 @@
-import {Component} from '@angular/core'
+import {Component,Input} from '@angular/core'
 
 @Component({
   selector: `pokemon-model`,
   template: `
-    three.js pokemon model component
+    three.js pokemon model component {{pokemon.name}}
   `
 })
 
 export class PokemonModelComponent{
-
+  @Input() pokemon = {};
 }

@@ -1,12 +1,12 @@
-import {Component} from '@angular/core'
+import {Component, Input} from '@angular/core'
 
 @Component({
   selector: `pokemon-stats`,
   template: `
-    pokemon stats component
+    pokemon stats component {{pokemon.name}}
   `
 })
 
 export class PokemonStatsComponent{
-
+  @Input() pokemon = {};
 }

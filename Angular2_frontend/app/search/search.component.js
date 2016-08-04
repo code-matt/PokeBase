@@ -28,11 +28,6 @@ var SearchComponent = (function () {
             .subscribe(function (s) { return _pokemonService.search(s)
             .subscribe(function (data) { return _this.items = data.pokemons; }); });
     }
-    SearchComponent.prototype.ngOnChanges = function (changes) {
-        {
-            console.log('changed');
-        }
-    };
     SearchComponent.prototype.toggleFocus = function () {
         this.focus = !this.focus;
     };

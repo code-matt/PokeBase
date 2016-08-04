@@ -11,11 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var PokemonStatsComponent = (function () {
     function PokemonStatsComponent() {
+        this.pokemon = {};
     }
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], PokemonStatsComponent.prototype, "pokemon", void 0);
     PokemonStatsComponent = __decorate([
         core_1.Component({
             selector: "pokemon-stats",
-            template: "\n    pokemon stats component\n  "
+            template: "\n    pokemon stats component {{pokemon.name}}\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], PokemonStatsComponent);

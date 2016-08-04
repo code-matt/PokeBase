@@ -32,11 +32,7 @@ import {HTTP_PROVIDERS} from '@angular/http'
   `
 })
 
-export class SearchComponent implements OnChanges {
-
-  ngOnChanges(changes: {[propertyName: string]: SimpleChange}) {
-    {console.log('changed')}
-  }
+export class SearchComponent {
 
   @Output() load = new EventEmitter();
 
