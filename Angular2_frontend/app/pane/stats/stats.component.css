@@ -1,4 +1,6 @@
 .stats {
-  border: 2px solid;
-  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+}
+.stats h2 {
+  text-decoration: underline;
 }

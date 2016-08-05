@@ -16,13 +16,13 @@ import {HTTP_PROVIDERS} from '@angular/http'
     </div>
     <div class="row">
       <div class="col-md-12 col-centered">
-        <div class="col-md-5 col-sm-11 datapane">
-          <div class="container-fluid datapane-background">
+        <div class="col-md-6 col-sm-2 datapane">
+          <div class="container-fluid">
           </div>
           <pane #leftPane></pane>
         </div>
-        <div class="col-md-5 col-sm-11 datapane">
-          <div class="container-fluid datapane-background">
+        <div class="col-md-6 col-sm-12 datapane">
+          <div class="container-fluid">
           </div>
           <pane #rightPane></pane>
         </div>

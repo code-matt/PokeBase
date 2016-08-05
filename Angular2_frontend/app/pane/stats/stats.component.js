@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var card_1 = require('@angular2-material/card');
 var PokemonStatsComponent = (function () {
     function PokemonStatsComponent() {
         this.pokemon = {};
@@ -21,7 +22,8 @@ var PokemonStatsComponent = (function () {
         core_1.Component({
             selector: "pokemon-stats",
             styleUrls: ['app/pane/stats/stats.component.css'],
-            template: "\n  <div class=\"stats\">\n    <p>Name: {{pokemon.name}}</p>\n    <p>Attack: {{pokemon.attack}}</p>\n    <p>Stamina: {{pokemon.stamina}}</p>\n    <p>Defence: {{pokemon.defence}}</p>\n  </div>\n  "
+            directives: [card_1.MD_CARD_DIRECTIVES],
+            template: "\n  <div *ngIf=\"pokemon.moves\" class=\"stats\">\n    <md-card>\n     <md-card-content>\n       <h2>{{pokemon.name}}</h2>\n       <p>Attack: {{pokemon.attack}}</p>\n       <p>Defence: {{pokemon.defence}}</p>\n       <p>Stamina: {{pokemon.stamina}}</p>\n     </md-card-content>\n     <hr/>\n     <md-card-footer>\n       {{pokemon.description}}\n     </md-card-footer>\n    </md-card>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], PokemonStatsComponent);
