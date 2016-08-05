@@ -36,7 +36,8 @@ var MatchupPageComponent = (function () {
             selector: 'matchup-page',
             directives: [search_component_1.SearchComponent, pane_component_1.PaneComponent],
             providers: [http_1.HTTP_PROVIDERS],
-            template: "\n    <div class=\"row\">\n      <div class=\"col-md-6 col-md-offset-3\">\n        <search (load)=\"load_pokemon($event)\"></search>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12 col-centered\">\n        <div class=\"col-md-6 col-sm-12\">\n          <pane #leftPane></pane>\n        </div>\n        <div class=\"col-md-6 col-sm-12\">\n          <pane #rightPane></pane>\n        </div>\n      </div>\n    </div>\n  "
+            styleUrls: ['app/matchup-page/matchup-page.component.css'],
+            template: "\n    <div class=\"row\">\n      <div class=\"col-md-6 col-md-offset-3\">\n        <search (load)=\"load_pokemon($event)\"></search>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12 col-centered\">\n        <div class=\"col-md-5 col-sm-11 datapane\">\n          <div class=\"container-fluid datapane-background\">\n          </div>\n          <pane #leftPane></pane>\n        </div>\n        <div class=\"col-md-5 col-sm-11 datapane\">\n          <div class=\"container-fluid datapane-background\">\n          </div>\n          <pane #rightPane></pane>\n        </div>\n      </div>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], MatchupPageComponent);

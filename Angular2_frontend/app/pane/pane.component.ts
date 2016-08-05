@@ -10,7 +10,6 @@ import {MovesGraphComponent} from './moves-graph/moves-graph.component';
   directives: [PokemonStatsComponent, PokemonModelComponent, MovesGraphComponent],
   selector: `pane`,
   template: `
-    {{pokemon.name}}
     <div class="row">
       <div class="col-md-5">
         <pokemon-model #model></pokemon-model>

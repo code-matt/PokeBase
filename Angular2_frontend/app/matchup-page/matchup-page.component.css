@@ -1,0 +1,16 @@
+.datapane {
+  margin: 15px;
+  margin-left: 50px;
+}
+
+.datapane-background {
+  border: 2px solid;
+  border-color: #FFFFFF;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background:url(assets/images/pokeball.png) no-repeat center top scroll;
+  background-size: 100% auto;
+  padding-bottom: 100%;
+}

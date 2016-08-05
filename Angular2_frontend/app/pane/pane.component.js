@@ -51,7 +51,7 @@ var PaneComponent = (function () {
             providers: [pokemon_service_1.PokemonService],
             directives: [stats_component_1.PokemonStatsComponent, three_component_1.PokemonModelComponent, moves_graph_component_1.MovesGraphComponent],
             selector: "pane",
-            template: "\n    {{pokemon.name}}\n    <div class=\"row\">\n      <div class=\"col-md-5\">\n        <pokemon-model #model></pokemon-model>\n      </div>\n      <div class=\"col-md-7\">\n        <pokemon-stats #stats></pokemon-stats>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <moves-graph #graph></moves-graph>\n      </div>\n    </div>\n  "
+            template: "\n    <div class=\"row\">\n      <div class=\"col-md-5\">\n        <pokemon-model #model></pokemon-model>\n      </div>\n      <div class=\"col-md-7\">\n        <pokemon-stats #stats></pokemon-stats>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <moves-graph #graph></moves-graph>\n      </div>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [pokemon_service_1.PokemonService])
     ], PaneComponent);

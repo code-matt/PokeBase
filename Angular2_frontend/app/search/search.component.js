@@ -28,8 +28,11 @@ var SearchComponent = (function () {
             .subscribe(function (s) { return _pokemonService.search(s)
             .subscribe(function (data) { return _this.items = data.pokemons; }); });
     }
-    SearchComponent.prototype.toggleFocus = function () {
-        this.focus = !this.focus;
+    SearchComponent.prototype.gainFocus = function () {
+        this.focus = true;
+    };
+    SearchComponent.prototype.loseFocus = function () {
+        this.focus = false;
     };
     SearchComponent.prototype.load_pokemon = function (event, pannel) {
         name = jQuery(event.target.parentNode).find('#pokemon_name').text();
@@ -47,7 +50,7 @@ var SearchComponent = (function () {
             selector: 'search',
             styleUrls: ['app/search/search.component.css'],
             providers: [pokemon_service_1.PokemonService, http_1.HTTP_PROVIDERS],
-            template: "\n    <div class=\"search\">\n      <div class=\"input-group\">\n        <span class=\"input-group-addon\" id=\"pikagif\"><img src=\"/assets/images/pikachu.gif\" alt=\"@\" height=\"20\" /></span>\n        <input [ngFormControl]=\"search\" type=\"text\" class=\"form-control\" placeholder=\"Search by Pokemon name\" aria-describedby=\"pikagif\" (blur)=\"toggleFocus()\" (focus)=\"toggleFocus()\">\n      </div>\n\n        <div *ngFor=\"let item of items\" class=\"search_result\">\n          <img src=\"http://localhost:8000/{{item.image}}\" alt=\"@\" height=\"40\" width=\"40\" />\n          <span id=\"pokemon_name\">{{item.name}}</span>\n          <button type=\"button\" (click)=\"load_pokemon($event,'left')\">Left</button>\n          <button type=\"button\" (click)=\"load_pokemon($event,'right')\">Right</button>\n        </div>\n\n    </div>\n  "
+            template: "\n    <div class=\"search\" on-mouseover=\"gainFocus()\" on-mouseleave=\"loseFocus()\">\n      <div class=\"input-group\">\n        <span class=\"input-group-addon\" id=\"pikagif\"><img src=\"/assets/images/pikachu.gif\" alt=\"@\" height=\"20\" /></span>\n        <input [ngFormControl]=\"search\" type=\"text\" class=\"form-control\" placeholder=\"Search by Pokemon name\" aria-describedby=\"pikagif\">\n      </div>\n      <div *ngIf=\"focus\">\n        <div *ngFor=\"let item of items\" class=\"search_result\">\n          <img src=\"http://localhost:8000/{{item.image}}\" alt=\"@\" height=\"40\" width=\"40\" />\n          <span id=\"pokemon_name\">{{item.name}}</span>\n          <button type=\"button\" (click)=\"load_pokemon($event,'left')\">Left</button>\n          <button type=\"button\" (click)=\"load_pokemon($event,'right')\">Right</button>\n        </div>\n      </div>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [pokemon_service_1.PokemonService])
     ], SearchComponent);

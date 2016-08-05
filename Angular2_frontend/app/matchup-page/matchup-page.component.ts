@@ -7,6 +7,7 @@ import {HTTP_PROVIDERS} from '@angular/http'
   selector: 'matchup-page',
   directives: [SearchComponent,PaneComponent],
   providers: [HTTP_PROVIDERS],
+  styleUrls: ['app/matchup-page/matchup-page.component.css'],
   template: `
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
@@ -15,10 +16,14 @@ import {HTTP_PROVIDERS} from '@angular/http'
     </div>
     <div class="row">
       <div class="col-md-12 col-centered">
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-5 col-sm-11 datapane">
+          <div class="container-fluid datapane-background">
+          </div>
           <pane #leftPane></pane>
         </div>
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-5 col-sm-11 datapane">
+          <div class="container-fluid datapane-background">
+          </div>
           <pane #rightPane></pane>
         </div>
       </div>

@@ -20,7 +20,7 @@ var MovesGraphComponent = (function () {
     MovesGraphComponent = __decorate([
         core_1.Component({
             selector: "moves-graph",
-            template: "\n    d3.js bargraph of moves component {{pokemon.name}}\n  "
+            template: "\n  <div *ngIf=\"pokemon.moves\">\n    <p *ngFor=\"let move of pokemon.moves\">-{{move.name}}- Power:{{move.power}} Energy Cost:{{move.energy_cost}}</p>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], MovesGraphComponent);
