@@ -52,7 +52,7 @@ export class SearchComponent {
     this.focus = false;
   }
   load_pokemon(event: any,pannel: any){
-    name = jQuery(event.target.parentNode).find('#pokemon_name').text();
+    name = event.target.parentNode.children[1].innerHTML;
     this.load.emit({
       pokemon: name,
       pannel: pannel
