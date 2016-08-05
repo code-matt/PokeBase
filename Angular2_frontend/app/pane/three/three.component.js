@@ -20,7 +20,8 @@ var PokemonModelComponent = (function () {
     PokemonModelComponent = __decorate([
         core_1.Component({
             selector: "pokemon-model",
-            template: "\n    three.js pokemon model component {{pokemon.name}}\n  "
+            styleUrls: ['app/pane/three/three.component.css'],
+            template: "\n    <div class=\"three\">\n      three.js pokemon model component {{pokemon.name}}\n    <div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], PokemonModelComponent);

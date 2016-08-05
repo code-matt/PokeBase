@@ -21,7 +21,7 @@ var PokemonStatsComponent = (function () {
         core_1.Component({
             selector: "pokemon-stats",
             styleUrls: ['app/pane/stats/stats.component.css'],
-            template: "\n  <div class=\"stats-bg\">\n    <p>Name: {{pokemon.name}}</p>\n    <p>Attack: {{pokemon.attack}}</p>\n    <p>Stamina: {{pokemon.stamina}}</p>\n    <p>Defence: {{pokemon.defence}}</p>\n  </div>\n  "
+            template: "\n  <div class=\"stats\">\n    <p>Name: {{pokemon.name}}</p>\n    <p>Attack: {{pokemon.attack}}</p>\n    <p>Stamina: {{pokemon.stamina}}</p>\n    <p>Defence: {{pokemon.defence}}</p>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], PokemonStatsComponent);

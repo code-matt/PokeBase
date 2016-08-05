@@ -4,7 +4,7 @@ import {Component, Input} from '@angular/core'
   selector: `pokemon-stats`,
   styleUrls: ['app/pane/stats/stats.component.css'],
   template: `
-  <div class="stats-bg">
+  <div class="stats">
     <p>Name: {{pokemon.name}}</p>
     <p>Attack: {{pokemon.attack}}</p>
     <p>Stamina: {{pokemon.stamina}}</p>
