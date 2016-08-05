@@ -21,7 +21,7 @@ var MovesGraphComponent = (function () {
         core_1.Component({
             selector: "moves-graph",
             styleUrls: ['app/pane/moves-graph/moves-graph.component.css'],
-            template: "\n  <div *ngIf=\"pokemon.moves\">\n    <p *ngFor=\"let move of pokemon.moves\">-{{move.name}}- Power:{{move.power}} Energy Cost:{{move.energy_cost}}</p>\n  </div>\n  "
+            template: "\n    d3.js chart component\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], MovesGraphComponent);
