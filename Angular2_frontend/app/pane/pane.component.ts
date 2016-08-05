@@ -7,7 +7,7 @@ import {MovesGraphComponent} from './moves-graph/moves-graph.component';
 
 @Component({
   providers: [PokemonService],
-  directives: [PokemonStatsComponent, PokemonModelComponent, MovesGraphComponent],
+  directives: [PokemonStatsComponent, PokemonModelComponent, MovesGraphComponent,MD_CARD_DIRECTIVES],
   selector: `pane`,
   template: `
     <div class="row">
