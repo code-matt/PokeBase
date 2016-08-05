@@ -49,7 +49,7 @@ var PaneComponent = (function () {
     PaneComponent = __decorate([
         core_1.Component({
             providers: [pokemon_service_1.PokemonService],
-            directives: [stats_component_1.PokemonStatsComponent, three_component_1.PokemonModelComponent, moves_graph_component_1.MovesGraphComponent],
+            directives: [stats_component_1.PokemonStatsComponent, three_component_1.PokemonModelComponent, moves_graph_component_1.MovesGraphComponent, MD_CARD_DIRECTIVES],
             selector: "pane",
             template: "\n    <div class=\"row\">\n      <div class=\"col-md-5\">\n        <pokemon-model #model></pokemon-model>\n      </div>\n      <div class=\"col-md-7\">\n        <pokemon-stats #stats></pokemon-stats>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <moves-graph #graph></moves-graph>\n      </div>\n    </div>\n  "
         }), 

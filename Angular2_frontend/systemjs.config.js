@@ -10,7 +10,8 @@
 
     '@angular':                   'node_modules/@angular',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
-    'rxjs':                       'node_modules/rxjs'
+    'rxjs':                       'node_modules/rxjs',
+    '@angular2-material': 'node_modules/@angular2-material'
   };
 
   // packages tells the System loader how to load when no filename and/or no extension
@@ -32,6 +33,8 @@
     'router-deprecated',
     'upgrade',
   ];
+
+
 
   // Individual files (~300 requests):
   function packIndex(pkgName) {
@@ -56,6 +59,26 @@
     map: map,
     packages: packages
   };
+
+  var materialPackages=[
+    '@angular2-material/core',
+    '@angular2-material/button',
+    '@angular2-material/card',
+    '@angular2-material/checkbox',
+    '@angular2-material/icon',
+    '@angular2-material/input',
+    '@angular2-material/list',
+    '@angular2-material/progress-bar',
+    '@angular2-material/progress-circle',
+    '@angular2-material/radio',
+    '@angular2-material/sidenav',
+    '@angular2-material/toolbar'
+  ];
+
+  materialPackages.forEach(function(pkgName) {
+    var pkg=pkgName.split('/');
+    packages[pkgName] = { main: pkg[1]+'.js', defaultExtension: 'js' };
+  });
 
   System.config(config);
 
