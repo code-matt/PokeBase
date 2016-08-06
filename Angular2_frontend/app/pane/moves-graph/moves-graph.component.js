@@ -36,7 +36,7 @@ var MovesGraphComponent = (function () {
                 },
                 yAxis: {
                     axisLabel: 'Power',
-                    axisLabelDistance: -70
+                    axisLabelDistance: -60
                 }
             }
         };
@@ -70,7 +70,7 @@ var MovesGraphComponent = (function () {
             selector: "moves-graph",
             directives: [ng2_nvd3_1.nvD3],
             styleUrls: ['app/pane/moves-graph/moves-graph.component.css'],
-            template: "\n    <div (click)=\"break()\">\n      <nvd3 #nvD3 [options]=\"options\" [data]=\"data\"></nvd3>\n    </div>\n  "
+            template: "\n    <div class=\"moves-graph\">\n      <nvd3 #nvD3 [options]=\"options\" [data]=\"data\"></nvd3>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], MovesGraphComponent);

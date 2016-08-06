@@ -1,21 +1,28 @@
 import { Component } from '@angular/core';
 import { MatchupPageComponent } from './matchup-page/matchup-page.component'
+import { ROUTER_DIRECTIVES } from '@angular/router';
+import { FooterComponent } from './footer/footer.component'
 
 
 @Component({
     selector: 'my-app',
-    directives: [MatchupPageComponent],
+    directives: [MatchupPageComponent, ROUTER_DIRECTIVES, FooterComponent],
     template: `
       <div class="container-fluid">
       	<div class="row">
       		<div class="col-md-12 header">
             PokeBase
             <div class="nav">
-              Home | API
+            <a routerLink="/matchup" routerLinkActive="active">Home</a> | API
             </div>
       		</div>
       	</div>
-        <matchup-page></matchup-page>
+        <router-outlet></router-outlet>
+        <div class="row">
+          <div class="col-md-12">
+            <footer></footer>
+          </div>
+        </div>
       </div>
     `
 })
