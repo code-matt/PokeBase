@@ -127,3 +127,22 @@ end
 ###########
 
 seed_all_the_things!
+
+# require 'nokogiri'
+# require 'open-uri'
+#
+#   def scrape_image_links
+#     Pokemon.all.each_with_index do |pokemon,index|
+#       next if [29,32,33,34,35,36].include?(index+1)
+#       url = "http://pokemon.wikia.com/wiki/File:#{(index+1).to_s.rjust(3, '0')}#{pokemon.name}.png"
+#       parsed_page = Nokogiri::HTML(open(url))
+#       puts "scraping image"
+#       img = parsed_page.at('#file img')['src']
+#       if img != ""
+#         File.open("#{index+1}.png", "wb") do |f|
+#           f.write(open(img).read)
+#         end
+#       end
+#     end
+#   end
+# scrape_image_links
