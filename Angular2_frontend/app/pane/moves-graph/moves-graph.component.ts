@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, ViewChild} from '@angular/core'
+import {Component, Input, OnInit, ViewChild, OnChanges, SimpleChange} from '@angular/core'
 import {nvD3} from 'ng2-nvd3'
 declare let d3: any
 
@@ -14,8 +14,8 @@ declare let d3: any
   `
 })
 
-export class MovesGraphComponent implements OnInit{
-  @Input() pokemon = {};
+export class MovesGraphComponent implements OnInit, OnChanges{
+  @Input() pokemon: any;
   @ViewChild(nvD3) nvD3: nvD3;
   options: any;
   data: any;
@@ -56,14 +56,14 @@ export class MovesGraphComponent implements OnInit{
       }
     ];
   }
-  break(){
-    this.nvD3.updateWithData(
-      [
+  ngOnChanges(changes: SimpleChange){
+    if(this.nvD3.chart){
+      this.nvD3.updateWithData([
         {
           key: "Moves",
-          values: this.pokemon.moves
+          values: changes.pokemon.currentValue.moves
         }
-      ]
-    );
+      ])
+    }
   }
 }

@@ -26,9 +26,6 @@ var PaneComponent = (function () {
     };
     PaneComponent.prototype.set_pokemon = function (pokemon) {
         this.pokemon = pokemon;
-        this.model.pokemon = this.pokemon;
-        this.stats.pokemon = this.pokemon;
-        this.graph.pokemon = this.pokemon;
     };
     __decorate([
         core_1.Input(), 
@@ -51,7 +48,7 @@ var PaneComponent = (function () {
             providers: [pokemon_service_1.PokemonService],
             directives: [stats_component_1.PokemonStatsComponent, three_component_1.PokemonModelComponent, moves_graph_component_1.MovesGraphComponent],
             selector: "pane",
-            template: "\n    <div class=\"row\">\n      <div class=\"col-md-5\">\n        <pokemon-model #model></pokemon-model>\n      </div>\n      <div class=\"col-md-7\">\n        <pokemon-stats #stats></pokemon-stats>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <moves-graph #graph></moves-graph>\n      </div>\n    </div>\n  "
+            template: "\n    <div class=\"row\">\n      <div class=\"col-md-5\">\n        <pokemon-model #model [pokemon]=\"pokemon\"></pokemon-model>\n      </div>\n      <div class=\"col-md-7\">\n        <pokemon-stats #stats [pokemon]=\"pokemon\"></pokemon-stats>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <moves-graph #graph [pokemon]=\"pokemon\"></moves-graph>\n      </div>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [pokemon_service_1.PokemonService])
     ], PaneComponent);

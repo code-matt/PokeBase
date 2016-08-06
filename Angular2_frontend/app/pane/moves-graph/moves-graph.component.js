@@ -12,7 +12,6 @@ var core_1 = require('@angular/core');
 var ng2_nvd3_1 = require('ng2-nvd3');
 var MovesGraphComponent = (function () {
     function MovesGraphComponent() {
-        this.pokemon = {};
     }
     MovesGraphComponent.prototype.ngOnInit = function () {
         this.options = {
@@ -48,13 +47,15 @@ var MovesGraphComponent = (function () {
             }
         ];
     };
-    MovesGraphComponent.prototype.break = function () {
-        this.nvD3.updateWithData([
-            {
-                key: "Moves",
-                values: this.pokemon.moves
-            }
-        ]);
+    MovesGraphComponent.prototype.ngOnChanges = function (changes) {
+        if (this.nvD3.chart) {
+            this.nvD3.updateWithData([
+                {
+                    key: "Moves",
+                    values: changes.pokemon.currentValue.moves
+                }
+            ]);
+        }
     };
     __decorate([
         core_1.Input(), 
