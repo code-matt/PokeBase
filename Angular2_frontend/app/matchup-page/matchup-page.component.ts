@@ -16,7 +16,7 @@ import {HTTP_PROVIDERS} from '@angular/http'
     </div>
     <div class="row">
       <div class="col-md-12 col-centered">
-        <div class="col-md-6 col-sm-2 datapane">
+        <div class="col-md-6 col-sm-12 datapane">
           <div class="container-fluid">
           </div>
           <pane #leftPane></pane>

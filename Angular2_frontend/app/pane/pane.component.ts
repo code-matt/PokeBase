@@ -12,15 +12,15 @@ import {MovesGraphComponent} from './moves-graph/moves-graph.component';
   template: `
     <div class="row">
       <div class="col-md-5">
-        <pokemon-model #model></pokemon-model>
+        <pokemon-model #model [pokemon]="pokemon"></pokemon-model>
       </div>
       <div class="col-md-7">
-        <pokemon-stats #stats></pokemon-stats>
+        <pokemon-stats #stats [pokemon]="pokemon"></pokemon-stats>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <moves-graph #graph></moves-graph>
+        <moves-graph #graph [pokemon]="pokemon"></moves-graph>
       </div>
     </div>
   `
@@ -33,22 +33,16 @@ export class PaneComponent{
   @ViewChild('stats') stats: PokemonStatsComponent
   @ViewChild('graph') graph: MovesGraphComponent
 
-  load_data(pokemon: any)
-  {
+  load_data(pokemon: any){
     console.log('loading data for ' + pokemon +'!')
     this._pokemonService.search(pokemon)
       .subscribe(
         res => this.set_pokemon(res.pokemons[0]),
         error => console.log(error))
-
   }
 
-  set_pokemon(pokemon: any)
-  {
+  set_pokemon(pokemon: any){
     this.pokemon = pokemon
-    this.model.pokemon = this.pokemon
-    this.stats.pokemon = this.pokemon
-    this.graph.pokemon = this.pokemon
   }
 
 }

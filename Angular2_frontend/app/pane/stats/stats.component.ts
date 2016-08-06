@@ -15,9 +15,6 @@ import {MD_CARD_DIRECTIVES} from '@angular2-material/card'
        <p>Stamina: {{pokemon.stamina}}</p>
      </md-card-content>
      <hr/>
-     <md-card-footer>
-       {{pokemon.description}}
-     </md-card-footer>
     </md-card>
   </div>
   `
