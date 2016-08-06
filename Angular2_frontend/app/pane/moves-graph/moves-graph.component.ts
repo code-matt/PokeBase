@@ -7,7 +7,7 @@ declare let d3: any
   directives: [nvD3],
   styleUrls: ['app/pane/moves-graph/moves-graph.component.css'],
   template: `
-    <div (click)="break()">
+    <div class="moves-graph">
       <nvd3 #nvD3 [options]="options" [data]="data"></nvd3>
     </div>
   `
@@ -41,7 +41,7 @@ export class MovesGraphComponent implements OnInit, OnChanges{
         },
         yAxis: {
           axisLabel: 'Power',
-          axisLabelDistance: -70
+          axisLabelDistance: -60
         }
       }
 
