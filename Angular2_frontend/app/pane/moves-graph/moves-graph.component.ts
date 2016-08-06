@@ -56,7 +56,7 @@ export class MovesGraphComponent implements OnInit, OnChanges{
       }
     ];
   }
-  ngOnChanges(changes: SimpleChange){
+  ngOnChanges(changes){
     if(this.nvD3.chart){
       this.nvD3.updateWithData([
         {
