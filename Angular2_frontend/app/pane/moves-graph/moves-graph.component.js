@@ -9,19 +9,67 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var ng2_nvd3_1 = require('ng2-nvd3');
 var MovesGraphComponent = (function () {
     function MovesGraphComponent() {
         this.pokemon = {};
     }
+    MovesGraphComponent.prototype.ngOnInit = function () {
+        this.options = {
+            chart: {
+                type: 'discreteBarChart',
+                height: 450,
+                margin: {
+                    top: 20,
+                    right: 0,
+                    bottom: 20,
+                    left: 0
+                },
+                x: function (d) { return d.name; },
+                y: function (d) { return d.power; },
+                showValues: true,
+                valueFormat: function (d) {
+                    return d3.format(',.4f')(d);
+                },
+                duration: 500,
+                xAxis: {
+                    axisLabel: 'Move Name'
+                },
+                yAxis: {
+                    axisLabel: 'Power',
+                    axisLabelDistance: -70
+                }
+            }
+        };
+        this.data = [
+            {
+                key: "Moves",
+                values: []
+            }
+        ];
+    };
+    MovesGraphComponent.prototype.break = function () {
+        this.nvD3.updateWithData([
+            {
+                key: "Moves",
+                values: this.pokemon.moves
+            }
+        ]);
+    };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Object)
     ], MovesGraphComponent.prototype, "pokemon", void 0);
+    __decorate([
+        core_1.ViewChild(ng2_nvd3_1.nvD3), 
+        __metadata('design:type', ng2_nvd3_1.nvD3)
+    ], MovesGraphComponent.prototype, "nvD3", void 0);
     MovesGraphComponent = __decorate([
         core_1.Component({
             selector: "moves-graph",
+            directives: [ng2_nvd3_1.nvD3],
             styleUrls: ['app/pane/moves-graph/moves-graph.component.css'],
-            template: "\n    d3.js chart component\n  "
+            template: "\n    d3.js chart component\n    <div (click)=\"break()\">\n      <nvd3 #nvD3 [options]=\"options\" [data]=\"data\"></nvd3>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], MovesGraphComponent);

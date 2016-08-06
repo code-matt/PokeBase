@@ -40,7 +40,6 @@ export class PaneComponent{
       .subscribe(
         res => this.set_pokemon(res.pokemons[0]),
         error => console.log(error))
-
   }
 
   set_pokemon(pokemon: any)

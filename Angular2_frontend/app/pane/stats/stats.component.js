@@ -23,7 +23,7 @@ var PokemonStatsComponent = (function () {
             selector: "pokemon-stats",
             styleUrls: ['app/pane/stats/stats.component.css'],
             directives: [card_1.MD_CARD_DIRECTIVES],
-            template: "\n  <div *ngIf=\"pokemon.moves\" class=\"stats\">\n    <md-card>\n     <md-card-content>\n       <h2>{{pokemon.name}}</h2>\n       <p>Attack: {{pokemon.attack}}</p>\n       <p>Defence: {{pokemon.defence}}</p>\n       <p>Stamina: {{pokemon.stamina}}</p>\n     </md-card-content>\n     <hr/>\n     <md-card-footer>\n       {{pokemon.description}}\n     </md-card-footer>\n    </md-card>\n  </div>\n  "
+            template: "\n  <div *ngIf=\"pokemon.moves\" class=\"stats\">\n    <md-card>\n     <md-card-content>\n       <h2>{{pokemon.name}}</h2>\n       <p>Attack: {{pokemon.attack}}</p>\n       <p>Defence: {{pokemon.defence}}</p>\n       <p>Stamina: {{pokemon.stamina}}</p>\n     </md-card-content>\n     <hr/>\n    </md-card>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], PokemonStatsComponent);
