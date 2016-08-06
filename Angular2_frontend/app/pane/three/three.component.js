@@ -35,7 +35,7 @@ var PokemonModelComponent = (function () {
         core_1.Component({
             selector: "pokemon-model",
             styleUrls: ['app/pane/three/three.component.css'],
-            template: "\n    <div #three class=\"three\" *ngIf=\"pokemon.moves\">\n      <img class=\"img-responsive shadowfilter\" src=\"http://localhost:8000/images/full/4.png\">\n    <div>\n  "
+            template: "\n    <div #three class=\"three\" *ngIf=\"pokemon.moves\">\n      <img class=\"img-responsive shadowfilter\" src=\"http://localhost:8000/images/full/{{pokemon.poke_id}}.png\">\n    <div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], PokemonModelComponent);

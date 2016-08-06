@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var Observable_1 = require('rxjs/Observable');
 require('rxjs/add/observable/timer');
 var card_1 = require('@angular2-material/card');
+var donut_types_component_1 = require('../donut-types/donut-types.component');
 var PokemonStatsComponent = (function () {
     function PokemonStatsComponent() {
         this.pokemon = {};
@@ -36,8 +37,8 @@ var PokemonStatsComponent = (function () {
         core_1.Component({
             selector: "pokemon-stats",
             styleUrls: ['app/pane/stats/stats.component.css'],
-            directives: [card_1.MD_CARD_DIRECTIVES],
-            template: "\n  <div #stats *ngIf=\"pokemon.moves\" class=\"stats\">\n    <md-card class=\"shadowfilter\">\n     <md-card-content>\n       <h2>{{pokemon.name}}</h2>\n       <p>Attack: {{pokemon.attack}}</p>\n       <p>Defence: {{pokemon.defence}}</p>\n       <p>Stamina: {{pokemon.stamina}}</p>\n     </md-card-content>\n     <hr/>\n    </md-card>\n  </div>\n  "
+            directives: [card_1.MD_CARD_DIRECTIVES, donut_types_component_1.DonutTypesComponent],
+            template: "\n  <div #stats *ngIf=\"pokemon.types\" class=\"stats\">\n    <md-card class=\"shadowfilter\">\n     <md-card-content>\n       <donut-types class=\"donut\" [pokemon]=\"pokemon\"></donut-types>\n       <h2>{{pokemon.name}}</h2>\n       <p>Attack: {{pokemon.attack}}</p>\n       <p>Defence: {{pokemon.defence}}</p>\n       <p>Stamina: {{pokemon.stamina}}</p>\n     </md-card-content>\n     <hr/>\n    </md-card>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], PokemonStatsComponent);

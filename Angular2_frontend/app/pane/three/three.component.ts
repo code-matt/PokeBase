@@ -6,7 +6,7 @@ import 'rxjs/add/observable/timer';
   styleUrls: ['app/pane/three/three.component.css'],
   template: `
     <div #three class="three" *ngIf="pokemon.moves">
-      <img class="img-responsive shadowfilter" src="http://localhost:8000/images/full/4.png">
+      <img class="img-responsive shadowfilter" src="http://localhost:8000/images/full/{{pokemon.poke_id}}.png">
     <div>
   `
 })
