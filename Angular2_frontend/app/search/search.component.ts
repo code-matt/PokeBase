@@ -8,12 +8,14 @@ import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/operator/switchMap';
 import {Http, Headers, RequestOptions} from '@angular/http'
 import {HTTP_PROVIDERS} from '@angular/http'
+import {SearchResultsComponent} from './search-results/search-results.component'
 
 
 @Component({
   selector: 'search',
   styleUrls: ['app/search/search.component.css'],
   providers: [PokemonService,HTTP_PROVIDERS],
+  directives: [SearchResultsComponent],
   template: `
     <div class="search" on-mouseover="gainFocus()" on-mouseleave="loseFocus()">
       <div class="input-group">
@@ -21,12 +23,7 @@ import {HTTP_PROVIDERS} from '@angular/http'
         <input [ngFormControl]="search" type="text" class="form-control" placeholder="Search by Pokemon name" aria-describedby="pikagif">
       </div>
       <div *ngIf="focus">
-        <div *ngFor="let item of items" class="search_result">
-          <img src="http://localhost:8000/{{item.image}}" alt="@" height="40" width="40" />
-          <span id="pokemon_name">{{item.name}}</span>
-          <button type="button" (click)="load_pokemon($event,'left')">Left</button>
-          <button type="button" (click)="load_pokemon($event,'right')">Right</button>
-        </div>
+        <search-results [results]=items (load)="load_pokemon($event)"></search-results>
       </div>
     </div>
   `
@@ -52,10 +49,9 @@ export class SearchComponent {
     this.focus = false;
   }
   load_pokemon(event: any,pannel: any){
-    name = event.target.parentNode.children[1].innerHTML;
     this.load.emit({
-      pokemon: name,
-      pannel: pannel
+      pokemon: event.pokemon,
+      pannel: event.pannel
     })
   }
 }
