@@ -14,5 +14,8 @@ npm start
 ```
 cd rails5_backend
 bundle install
+rails db:create
+rails db:migrate
+rails db:seed
 rails s -p 8000
 ```
