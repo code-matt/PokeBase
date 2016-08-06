@@ -70,7 +70,7 @@ var MovesGraphComponent = (function () {
             selector: "moves-graph",
             directives: [ng2_nvd3_1.nvD3],
             styleUrls: ['app/pane/moves-graph/moves-graph.component.css'],
-            template: "\n    d3.js chart component\n    <div (click)=\"break()\">\n      <nvd3 #nvD3 [options]=\"options\" [data]=\"data\"></nvd3>\n    </div>\n  "
+            template: "\n    <div (click)=\"break()\">\n      <nvd3 #nvD3 [options]=\"options\" [data]=\"data\"></nvd3>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], MovesGraphComponent);

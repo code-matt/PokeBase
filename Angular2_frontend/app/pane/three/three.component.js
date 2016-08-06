@@ -9,19 +9,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var Observable_1 = require('rxjs/Observable');
+require('rxjs/add/observable/timer');
 var PokemonModelComponent = (function () {
     function PokemonModelComponent() {
         this.pokemon = {};
     }
+    PokemonModelComponent.prototype.ngOnChanges = function (changes) {
+        var _this = this;
+        if (this.three) {
+            this.three.nativeElement.className = "";
+            var timer = Observable_1.Observable.timer(10, 10);
+            timer.subscribe(function (r) { return _this.three.nativeElement.className = "three"; });
+        }
+    };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Object)
     ], PokemonModelComponent.prototype, "pokemon", void 0);
+    __decorate([
+        core_1.ViewChild('three'), 
+        __metadata('design:type', Object)
+    ], PokemonModelComponent.prototype, "three", void 0);
     PokemonModelComponent = __decorate([
         core_1.Component({
             selector: "pokemon-model",
             styleUrls: ['app/pane/three/three.component.css'],
-            template: "\n    <div class=\"three\">\n      three.js pokemon model component {{pokemon.name}}\n    <div>\n  "
+            template: "\n    <div #three class=\"three\" *ngIf=\"pokemon.moves\">\n      <img class=\"img-responsive shadowfilter\" src=\"http://localhost:8000/images/full/4.png\">\n    <div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], PokemonModelComponent);

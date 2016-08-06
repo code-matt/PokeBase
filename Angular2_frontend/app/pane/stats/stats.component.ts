@@ -1,4 +1,6 @@
-import {Component, Input} from '@angular/core'
+import {Component, Input, ViewChild, OnChanges} from '@angular/core'
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/observable/timer';
 import {MD_CARD_DIRECTIVES} from '@angular2-material/card'
 
 @Component({
@@ -6,8 +8,8 @@ import {MD_CARD_DIRECTIVES} from '@angular2-material/card'
   styleUrls: ['app/pane/stats/stats.component.css'],
   directives: [MD_CARD_DIRECTIVES],
   template: `
-  <div *ngIf="pokemon.moves" class="stats">
-    <md-card>
+  <div #stats *ngIf="pokemon.moves" class="stats">
+    <md-card class="shadowfilter">
      <md-card-content>
        <h2>{{pokemon.name}}</h2>
        <p>Attack: {{pokemon.attack}}</p>
@@ -20,6 +22,16 @@ import {MD_CARD_DIRECTIVES} from '@angular2-material/card'
   `
 })
 
-export class PokemonStatsComponent{
+export class PokemonStatsComponent implements OnChanges{
   @Input() pokemon = {};
+  @ViewChild('stats') stats;
+
+  ngOnChanges(change: any){
+    if(this.stats){
+      this.stats.nativeElement.className = ""
+      let timer = Observable.timer(10,10);
+      timer.subscribe(r => this.stats.nativeElement.className = "stats");
+      // this.stats.nativeElement.className = "stats"
+    }
+  }
 }

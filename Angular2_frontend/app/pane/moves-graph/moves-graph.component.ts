@@ -7,7 +7,6 @@ declare let d3: any
   directives: [nvD3],
   styleUrls: ['app/pane/moves-graph/moves-graph.component.css'],
   template: `
-    d3.js chart component
     <div (click)="break()">
       <nvd3 #nvD3 [options]="options" [data]="data"></nvd3>
     </div>
@@ -56,7 +55,7 @@ export class MovesGraphComponent implements OnInit, OnChanges{
       }
     ];
   }
-  ngOnChanges(changes){
+  ngOnChanges(changes: any){
     if(this.nvD3.chart){
       this.nvD3.updateWithData([
         {

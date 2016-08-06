@@ -1,15 +1,26 @@
-import {Component,Input} from '@angular/core'
-
+import {Component,Input,ViewChild,OnChanges} from '@angular/core'
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/observable/timer';
 @Component({
   selector: `pokemon-model`,
   styleUrls: ['app/pane/three/three.component.css'],
   template: `
-    <div class="three">
-      three.js pokemon model component {{pokemon.name}}
+    <div #three class="three" *ngIf="pokemon.moves">
+      <img class="img-responsive shadowfilter" src="http://localhost:8000/images/full/4.png">
     <div>
   `
 })
 
-export class PokemonModelComponent{
+export class PokemonModelComponent implements OnChanges{
   @Input() pokemon = {};
+  @ViewChild('three') three
+
+  ngOnChanges(changes: any){
+    if(this.three){
+      this.three.nativeElement.className = ""
+      let timer = Observable.timer(10,10);
+      timer.subscribe(r => this.three.nativeElement.className = "three");
+    }
+  }
+
 }
