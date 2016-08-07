@@ -5,6 +5,13 @@
 }
 .stats h2 {
   text-decoration: underline;
+  font-size: 25px;
+}
+
+.stats img {
+  max-width: 125px;
+  max-height: 125px;
+  float: right
 }
 .shadowfilter {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
