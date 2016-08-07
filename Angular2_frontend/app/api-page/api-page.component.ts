@@ -4,7 +4,7 @@ import {Component} from '@angular/core';
   selector: `api-page`,
   styleUrls: ['app/api-page/api-page.component.css'],
   template: `
-    <h3>PokeBase API Overview</h3>
+    <h3>PokéBase API Overview</h3>
     <p>Query Pokemon or Moves to retreive data obtained from pokemon GO's
     game data that has been released online.</p>
     <hr>
