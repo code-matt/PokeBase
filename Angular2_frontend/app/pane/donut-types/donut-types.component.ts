@@ -22,8 +22,8 @@ export class DonutTypesComponent implements OnInit, OnChanges{
     this.options = {
       chart: {
         type: 'pieChart',
-        width: 300,
-        height: 300,
+        width: 130,
+        height: 130,
         donut: true,
         cornerRadius: true,
         padAngle: 0.05,
@@ -31,8 +31,8 @@ export class DonutTypesComponent implements OnInit, OnChanges{
         margin: {
           top: 0,
           right: 0,
-          bottom:160,
-          left: 100
+          bottom:0,
+          left: 0
         },
         x: function(d){return d.name;},
         y: function(d){return d.pie;},

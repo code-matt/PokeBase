@@ -11,7 +11,7 @@ import {MovesGraphComponent} from './moves-graph/moves-graph.component';
   selector: `pane`,
   template: `
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-4">
         <pokemon-model #model [pokemon]="pokemon"></pokemon-model>
       </div>
       <div class="col-md-7">

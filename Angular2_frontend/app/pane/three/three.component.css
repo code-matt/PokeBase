@@ -1,5 +1,7 @@
 .three {
   animation: bounceIn 0.75s;
+  max-width: 165px;
+  max-height: 165px;
 }
 
 .shadowfilter {

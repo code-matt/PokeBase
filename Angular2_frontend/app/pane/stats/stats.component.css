@@ -1,6 +1,7 @@
 .stats {
   background-color: #FFFFFF;
   animation: bounceIn 0.6s;
+  line-height: 3px;
 }
 .stats h2 {
   text-decoration: underline;
