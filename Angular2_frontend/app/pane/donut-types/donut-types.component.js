@@ -47,23 +47,22 @@ var DonutTypesComponent = (function () {
                 }
             }
         };
-        this.data = [
-            {
-                key: "Types",
-                values: []
-            }
-        ];
+        this.data = this.pokemonTypes(this.pokemon.types);
     };
     DonutTypesComponent.prototype.ngOnChanges = function (changes) {
         var arr = [];
         if (this.nvD3.chart) {
             var types = changes.pokemon.currentValue.types;
-            types.map(function (obj) {
-                obj.pie = changes.pokemon.currentValue.types.length;
-                arr.push(obj);
-            });
-            this.nvD3.updateWithData(arr);
+            this.nvD3.updateWithData(this.pokemonTypes(types));
         }
+    };
+    DonutTypesComponent.prototype.pokemonTypes = function (types) {
+        var arr = [];
+        types.map(function (obj) {
+            obj.pie = types.length;
+            arr.push(obj);
+        });
+        return arr;
     };
     __decorate([
         core_1.Input(), 

@@ -51,26 +51,22 @@ export class DonutTypesComponent implements OnInit, OnChanges{
           }
         }
       }
-
     }
-    this.data = [
-      {
-        key: "Types",
-        values: []
-      }
-    ];
+    this.data = this.pokemonTypes(this.pokemon.types)
   }
   ngOnChanges(changes: any){
     var arr: any[] = [];
     if(this.nvD3.chart){
       var types = changes.pokemon.currentValue.types
-
-      types.map(function(obj){
-        obj.pie = changes.pokemon.currentValue.types.length
-        arr.push(obj)
-      })
-
-      this.nvD3.updateWithData(arr);
+      this.nvD3.updateWithData(this.pokemonTypes(types));
     }
+  }
+  pokemonTypes(types: any[]){
+    var arr: any[] = [];
+    types.map(function(obj){
+      obj.pie = types.length
+      arr.push(obj)
+    })
+    return arr
   }
 }
