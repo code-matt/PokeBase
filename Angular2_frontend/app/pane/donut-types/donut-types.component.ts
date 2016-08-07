@@ -35,7 +35,7 @@ export class DonutTypesComponent implements OnInit, OnChanges{
           left: 100
         },
         x: function(d){return d.name;},
-        y: function(d){return d.poke_type_id;},
+        y: function(d){return d.pie;},
         showLabels: false,
         pie: {
           startAngle: function(d) { return d.startAngle -Math.PI/2 },
@@ -61,8 +61,16 @@ export class DonutTypesComponent implements OnInit, OnChanges{
     ];
   }
   ngOnChanges(changes: any){
+    var arr: any[] = [];
     if(this.nvD3.chart){
-      this.nvD3.updateWithData(changes.pokemon.currentValue.types)
+      var types = changes.pokemon.currentValue.types
+
+      types.map(function(obj){
+        obj.pie = changes.pokemon.currentValue.types.length
+        arr.push(obj)
+      })
+
+      this.nvD3.updateWithData(arr);
     }
   }
 }

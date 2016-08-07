@@ -33,7 +33,6 @@ export class PokemonStatsComponent implements OnChanges{
       this.stats.nativeElement.className = ""
       let timer = Observable.timer(10,10);
       timer.subscribe(r => this.stats.nativeElement.className = "stats");
-      // this.stats.nativeElement.className = "stats"
     }
   }
 }
