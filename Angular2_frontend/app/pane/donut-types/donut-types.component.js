@@ -17,20 +17,30 @@ var DonutTypesComponent = (function () {
         this.options = {
             chart: {
                 type: 'pieChart',
-                height: 250,
+                width: 300,
+                height: 300,
                 donut: true,
+                cornerRadius: true,
+                padAngle: 0.05,
+                title: "Types",
+                margin: {
+                    top: 0,
+                    right: 0,
+                    bottom: 160,
+                    left: 100
+                },
                 x: function (d) { return d.name; },
                 y: function (d) { return d.poke_type_id; },
                 showLabels: false,
                 pie: {
-                    startAngle: function (d) { return d.startAngle / 2 - Math.PI / 2; },
-                    endAngle: function (d) { return d.endAngle / 2 - Math.PI / 2; }
+                    startAngle: function (d) { return d.startAngle - Math.PI / 2; },
+                    endAngle: function (d) { return d.endAngle - Math.PI / 2; }
                 },
                 duration: 500,
                 legend: {
                     margin: {
                         top: 5,
-                        right: 0,
+                        right: 30,
                         bottom: 5,
                         left: 0
                     }
@@ -60,8 +70,9 @@ var DonutTypesComponent = (function () {
     DonutTypesComponent = __decorate([
         core_1.Component({
             selector: "donut-types",
+            styleUrls: ['app/pane/donut-types/donut-types.component.css'],
             directives: [ng2_nvd3_1.nvD3],
-            template: "\n    <div>\n      <nvd3 #nvD3 [options]=\"options\" [data]=\"data\"></nvd3>\n    </div>\n  "
+            template: "\n    <div class=\"donut\">\n      <nvd3 #nvD3 [options]=\"options\" [data]=\"data\"></nvd3>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], DonutTypesComponent);

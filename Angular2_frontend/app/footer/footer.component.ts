@@ -5,7 +5,7 @@ import {Component} from '@angular/core';
   styleUrls: ['app/footer/footer.component.css'],
   template: `
     <div class="footer">
-      Pokémon images & names © 1995-2016 Nintendo/Game Freak.
+      <p>Pokémon images & names © 1995-2016 Nintendo/Game Freak.</p>
     </div>
   `
 })

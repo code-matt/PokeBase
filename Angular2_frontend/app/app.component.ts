@@ -13,7 +13,9 @@ import { FooterComponent } from './footer/footer.component'
       		<div class="col-md-12 header">
             PokeBase
             <div class="nav">
-            <a routerLink="/matchup" routerLinkActive="active">Home</a> | API
+            <a routerLink="/matchup" routerLinkActive="active">Home</a>
+            |
+            <a routerLink="/api" routerLinkActive="active">API</a>
             </div>
       		</div>
       	</div>

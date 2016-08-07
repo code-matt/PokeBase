@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var FooterComponent = (function () {
-    function FooterComponent() {
+var ApiPageComponent = (function () {
+    function ApiPageComponent() {
     }
-    FooterComponent = __decorate([
+    ApiPageComponent = __decorate([
         core_1.Component({
-            selector: 'footer',
-            styleUrls: ['app/footer/footer.component.css'],
-            template: "\n    <div class=\"footer\">\n      <p>Pok\u00E9mon images & names \u00A9 1995-2016 Nintendo/Game Freak.</p>\n    </div>\n  "
+            selector: "api-page",
+            styleUrls: ['app/api-page/api-page.component.css'],
+            template: "\n    Api stuff mang\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], FooterComponent);
-    return FooterComponent;
+    ], ApiPageComponent);
+    return ApiPageComponent;
 }());
-exports.FooterComponent = FooterComponent;
-//# sourceMappingURL=footer.component.js.map
+exports.ApiPageComponent = ApiPageComponent;
+//# sourceMappingURL=api-page.component.js.map

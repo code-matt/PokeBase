@@ -4,9 +4,10 @@ declare let d3: any
 
 @Component({
   selector: `donut-types`,
+  styleUrls: ['app/pane/donut-types/donut-types.component.css'],
   directives: [nvD3],
   template: `
-    <div>
+    <div class="donut">
       <nvd3 #nvD3 [options]="options" [data]="data"></nvd3>
     </div>
   `
@@ -21,20 +22,30 @@ export class DonutTypesComponent implements OnInit, OnChanges{
     this.options = {
       chart: {
         type: 'pieChart',
-        height: 250,
+        width: 300,
+        height: 300,
         donut: true,
+        cornerRadius: true,
+        padAngle: 0.05,
+        title: "Types",
+        margin: {
+          top: 0,
+          right: 0,
+          bottom:160,
+          left: 100
+        },
         x: function(d){return d.name;},
         y: function(d){return d.poke_type_id;},
         showLabels: false,
         pie: {
-          startAngle: function(d) { return d.startAngle/2 -Math.PI/2 },
-          endAngle: function(d) { return d.endAngle/2 -Math.PI/2 }
+          startAngle: function(d) { return d.startAngle -Math.PI/2 },
+          endAngle: function(d) { return d.endAngle -Math.PI/2 }
         },
         duration: 500,
         legend: {
           margin: {
             top: 5,
-            right: 0,
+            right: 30,
             bottom: 5,
             left: 0
           }
