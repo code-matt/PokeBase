@@ -17,6 +17,8 @@ import { FooterComponent } from './components/footer/footer.component'
             <a routerLink="/matchup" routerLinkActive="active">Home</a>
             |
             <a routerLink="/api" routerLinkActive="active">API</a>
+            |
+            <a href="https://github.com/code-matt/PokeBase" target="_blank">GitHub</a>
             </div>
       		</div>
       	</div>

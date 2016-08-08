@@ -15,7 +15,7 @@ import {Component} from '@angular/core';
     <div class="col-md-5">
       <div class="panel panel-info">
         <!-- Default panel contents -->
-        <div class="panel-heading">PokeBase Queries</div>
+        <div class="panel-heading">/pokemons queries</div>
         <div class="panel-body">
           <table border="1">
             <tr>
@@ -37,6 +37,24 @@ import {Component} from '@angular/core';
               <td>stamina</td>
               <td>Int</td>
               <td>Queries pokemon who's base stamina is greater than the supplied value</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="panel panel-info">
+        <!-- Default panel contents -->
+        <div class="panel-heading">/moves queries</div>
+        <div class="panel-body">
+          <table border="1">
+            <tr>
+              <td>name</td>
+              <td>String</td>
+              <td>Queries by the pokemon or moves's name.</td>
+            </tr>
+            <tr>
+              <td>power</td>
+              <td>Int</td>
+              <td>Queries attacks with base power greater than the supplied value</td>
             </tr>
           </table>
         </div>
