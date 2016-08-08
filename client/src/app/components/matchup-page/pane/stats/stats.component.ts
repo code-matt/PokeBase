@@ -11,7 +11,7 @@ import {TypeBadgeComponent} from './type-badge/type-badge.component';
   template: `
   <div #stats *ngIf="pokemon.types" class="stats">
     <md-card class="shadowfilter">
-      <img class="img-responsive shadowfilter" src="http://localhost:8000/images/full/{{pokemon.poke_id}}.png">
+      <img class="img-responsive shadowfilter" src="https://pokebase.herokuapp.com/images/full/{{pokemon.poke_id}}.png">
       <md-card-content>
         <h2>{{pokemon.name}}</h2>
         <p>Attack: {{pokemon.attack}}</p>
