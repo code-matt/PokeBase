@@ -14,3 +14,10 @@ module PokeBase
     config.assets.enabled = false
   end
 end
+
+Rails.application.config.middleware.insert_after(
+  ActionDispatch::Static,
+  ActionDispatch::Static,
+  Rails.root.join("client").to_s,
+  Rails.application.config.static_cache_control
+)
