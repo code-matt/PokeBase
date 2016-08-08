@@ -12,12 +12,14 @@ module PokeBase
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.assets.enabled = false
+    # config.serve_static_files =
+    paths['public'] = File.join 'client', 'dist'
   end
 end
 
 Rails.application.config.middleware.insert_after(
   ActionDispatch::Static,
   ActionDispatch::Static,
-  Rails.root.join("client").to_s,
+  Rails.root.join("public").to_s,
   Rails.application.config.static_cache_control
 )
