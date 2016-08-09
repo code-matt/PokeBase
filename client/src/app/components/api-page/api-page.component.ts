@@ -61,7 +61,7 @@ import {Component} from '@angular/core';
       </div>
       <h3>Sample Query</h3>
       <div class="code">
-        http://localhost:8000/api/v1/pokemons?attack=100&defence=90
+        http://pokebase.herokuapp.com/api/v1/pokemons?attack=100&defence=90
       </div>
     </div>
   `
