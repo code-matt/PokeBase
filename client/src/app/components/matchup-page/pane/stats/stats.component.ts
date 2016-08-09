@@ -3,6 +3,7 @@ import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/timer';
 import {MD_CARD_DIRECTIVES} from '@angular2-material/card'
 import {TypeBadgeComponent} from './type-badge/type-badge.component';
+import { GlobalsComponent } from '../../../../shared/globals-component/globals.component'
 
 @Component({
   selector: `pokemon-stats`,
@@ -11,7 +12,7 @@ import {TypeBadgeComponent} from './type-badge/type-badge.component';
   template: `
   <div #stats *ngIf="pokemon.types" class="stats">
     <md-card class="shadowfilter">
-      <img class="img-responsive shadowfilter" src="https://pokebase.herokuapp.com/images/full/{{pokemon.poke_id}}.png">
+      <img class="img-responsive shadowfilter" src="http://{{_host.getHost()}}/images/full/{{pokemon.poke_id}}.png">
       <md-card-content>
         <h2>{{pokemon.name}}</h2>
         <p>Attack: {{pokemon.attack}}</p>
@@ -26,6 +27,7 @@ import {TypeBadgeComponent} from './type-badge/type-badge.component';
 })
 
 export class PokemonStatsComponent implements OnChanges{
+  constructor(private _host: GlobalsComponent){}
   @Input() pokemon = {};
   @ViewChild('stats') stats;
 

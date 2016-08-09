@@ -7,7 +7,12 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'http://pokebase.herokuapp.com'
+    
+    if ENV['RAILS_ENV'] == "development" || "test"
+      origins 'http://localhost:3000'
+    else
+      origins 'http://pokebase.herokuapp.com'
+    end
 
     resource '*',
       headers: :any,
