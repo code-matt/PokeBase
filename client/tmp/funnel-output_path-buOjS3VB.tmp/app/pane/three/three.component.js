@@ -1,1 +1,0 @@
-/Users/MMT/pokemans/pokebase_cli/tmp/funnel-input_base_path-CYPaCtJK.tmp/0/src/app/pane/three/three.component.js
