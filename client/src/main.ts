@@ -4,6 +4,7 @@ import { AppComponent, environment } from './app/';
 import { appRouterProviders } from './app/app.routes';
 import {provide} from '@angular/core';
 import { GlobalsComponent } from './app/shared/globals-component/globals.component'
+import {HTTP_PROVIDERS} from '@angular/http';
 
 if (environment.production) {
   enableProdMode();
@@ -12,5 +13,6 @@ if (environment.production) {
 bootstrap(AppComponent, [
   appRouterProviders,
   GlobalsComponent,
-  provide(Window, {useValue: window})
+  provide(Window, {useValue: window}),
+  HTTP_PROVIDERS
 ]);

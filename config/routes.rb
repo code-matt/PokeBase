@@ -7,6 +7,6 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :pokemons
+  get "/*path" => redirect("/?goto=%{path}")
 
 end
