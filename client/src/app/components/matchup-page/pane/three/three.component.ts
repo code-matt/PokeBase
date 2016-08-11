@@ -6,7 +6,7 @@ import 'rxjs/add/observable/timer';
   styleUrls: ['app/components/matchup-page/pane/three/three.component.css'],
   template: `
     <div #three class="three" *ngIf="pokemon.moves">
-      <img class="img-responsive shadowfilter" src="https://pokebase.herokuapp.com/images/full/{{pokemon.poke_id}}.png">
+      <img class="img-responsive shadowfilter" src="http://pokebase.herokuapp.com/images/full/{{pokemon.poke_id}}.png">
     <div>
   `
 })
