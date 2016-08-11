@@ -1,6 +1,7 @@
 import {Component,Input,ViewChild,OnChanges} from '@angular/core'
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/timer';
+
 @Component({
   selector: `pokemon-model`,
   styleUrls: ['app/components/matchup-page/pane/three/three.component.css'],
@@ -14,7 +15,7 @@ import 'rxjs/add/observable/timer';
 export class PokemonModelComponent implements OnChanges{
   @Input() pokemon = {};
   @ViewChild('three') three
-
+  constructor(){}
   ngOnChanges(changes: any){
     if(this.three){
       this.three.nativeElement.className = ""
