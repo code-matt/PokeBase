@@ -1,20 +1,14 @@
 import {Control, FORM_DIRECTIVES} from '@angular/common';
 import {Component, Output, Input, EventEmitter, OnChanges, SimpleChange} from '@angular/core';
-import {Observable} from 'rxjs/Rx';
 import {PokemonService} from '../../services/pokemon.service'
-import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/distinctUntilChanged';
-import 'rxjs/add/operator/switchMap';
-import {Http, Headers, RequestOptions} from '@angular/http'
-import {HTTP_PROVIDERS} from '@angular/http'
 import {SearchResultsComponent} from './search-results/search-results.component'
 
 
 @Component({
   selector: 'search',
   styleUrls: ['app/shared/search/search.component.css'],
-  providers: [PokemonService,HTTP_PROVIDERS],
+  providers: [PokemonService],
   directives: [SearchResultsComponent],
   template: `
     <div class="search" on-mouseover="gainFocus()" on-mouseleave="loseFocus()">
@@ -40,7 +34,8 @@ export class SearchComponent {
     this.search.valueChanges
       .debounceTime(500)
       .subscribe(s => _pokemonService.search(s)
-      .subscribe(data => this.items = data.pokemons))
+        .subscribe(data => this.items = data.pokemons),
+        error => console.log(error))
   }
   gainFocus(){
     this.focus = true;

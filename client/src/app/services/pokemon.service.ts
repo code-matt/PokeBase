@@ -9,6 +9,7 @@ export class PokemonService {
 
   search(term: any) {
     return this._http.get("http://pokebase.herokuapp.com/api/v1/pokemons?name=" + term)
-      .map(res => res.json())
+      .map(res => res.json(),
+      error => console.log(error))
   }
 }
