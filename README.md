@@ -20,10 +20,12 @@ rails db:seed
 ```
 cd client
 npm install
-ng build
-npm start
 ```
 ```
 cd ..
 rails s
 ```
+
+Right now you have to run ```ng build``` in the client directory while
+the server is still running to see any changes you make. Still trying
+to figure out how to bring live reload back.
