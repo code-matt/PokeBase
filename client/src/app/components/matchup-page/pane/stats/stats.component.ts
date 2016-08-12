@@ -2,12 +2,12 @@ import {Component, Input, ViewChild, OnChanges} from '@angular/core'
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/timer';
 import {TypeBadgeComponent} from './type-badge/type-badge.component';
-import {MD_CARD_DIRECTIVES} from '@angular2-material/card'
+// import {MD_CARD_DIRECTIVES} from '@angular2-material/card'
 
 @Component({
   selector: `pokemon-stats`,
   styleUrls: ['app/components/matchup-page/pane/stats/stats.component.css'],
-  directives: [TypeBadgeComponent,MD_CARD_DIRECTIVES],
+  directives: [TypeBadgeComponent],
   template: `
   <div #stats *ngIf="pokemon.types" class="stats">
     <md-card class="shadowfilter">
